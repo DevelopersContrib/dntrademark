@@ -1,20 +1,72 @@
 "use client";
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 
 const Signup = () => {
+  const [success, setSuccess] = useState(false);
   const [data, setData] = useState({
     firstName: "",
     lastName: "",
     email: "",
     password: "",
+    confirmPassword: "",
+    isLoading:false
   });
 
+  const initialErrors = {
+		firstNameError: "",
+		lastNameError: "",
+		emailError: "",
+		passwordError: "",
+	};
+  const [errors, setErrors] = useState(initialErrors);
+
+  useEffect(() => {
+    const dataErrors = {
+      firstNameError: data.firstName?'':"First name is required.",
+      lastNameError: data.lastName?'':"Last name is required.",
+      emailError: (data.email?'':"Email is required") || (/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email) ? "":"Invalid Email"),
+      passwordError: data.password?'':"Password is required.",
+    }
+    setErrors(dataErrors);
+		
+	}, [data]);
+  
+  const handleSubmit = async() => {
+    const isValid = !Object.values(errors).some(v => v);
+    if(isValid ){
+      setData({ ...data, ['isLoading']: true})
+      try {
+        const response = await fetch("/api/signup", {
+          method: "POST",
+          body: JSON.stringify(data),
+        });
+
+        setData({ ...data, ['isLoading']: false});
+        
+				if (response.ok) {
+          const res = await response.json()
+          if(res.success){
+            setSuccess(true)
+          }else{
+            alert(res.error)
+          }
+        }else{
+          alert('An error occurred')
+        }
+      } catch (error) {
+        console.log(error);
+      } finally {
+        //set
+      }
+		}
+  }
 
   return (
     <>
+      
       {/* <!-- ===== SignUp Form Start ===== --> */}
       <section className="pt-32.5 lg:pt-45 xl:pt-50 pb-12.5 lg:pb-25 xl:pb-30">
         <div className="mx-auto max-w-c-1016 relative z-1 pt-10 lg:pt-15 xl:pt-20 pb-7.5 px-7.5 lg:px-15 xl:px-20">
@@ -33,8 +85,12 @@ const Signup = () => {
               fill
             />
           </div>
-
-          <motion.div
+          
+          {success?(
+              <div><h1>success</h1></div>
+          ):
+          (
+            <motion.div
             variants={{
               hidden: {
                 opacity: 0,
@@ -191,7 +247,7 @@ const Signup = () => {
                   </label>
                 </div>
 
-                <button aria-label="signup with email and password" className="inline-flex items-center gap-2.5 bg-black dark:bg-btndark hover:bg-blackho ease-in-out duration-300 font-medium text-white rounded-full px-6 py-3">
+                <button type="button" onClick={handleSubmit} aria-label="signup with email and password" className="inline-flex items-center gap-2.5 bg-black dark:bg-btndark hover:bg-blackho ease-in-out duration-300 font-medium text-white rounded-full px-6 py-3">
                   Create Account
                   <svg
                     className="fill-white"
@@ -222,6 +278,9 @@ const Signup = () => {
               </div>
             </form>
           </motion.div>
+          )
+          }
+          
         </div>
       </section>
       {/* <!-- ===== SignUp Form End ===== --> */}
