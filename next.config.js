@@ -3,7 +3,7 @@
 const path = require('path')
 
 const nextConfig = {
-  reactStrictMode: true,
+  // reactStrictMode: true,
   swcMinify: true,
   images: {
     domains: ["localhost"],

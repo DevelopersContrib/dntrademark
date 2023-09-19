@@ -1,57 +1,10 @@
 "use client"
 import React, { useEffect } from 'react'
-import { SlHome, SlSettings, SlEnergy } from "react-icons/sl";
+import { SlHome, SlSettings, SlEnergy } from "react-icons/sl"
 import { RiArrowRightSLine } from "react-icons/ri"
 
 const Sidebar = () => {
-  // const handleDropdownToggle = (e) => {
-  //   e.preventDefault();
-  //   const item = e.currentTarget;
-  //   const parent = item.closest('.group');
-  //   if (parent.classList.contains('selected')) {
-  //     parent.classList.remove('selected');
-  //   } else {
-  //     document.querySelectorAll('.sidebar-dropdown-toggle').forEach(function (i) {
-  //       i.closest('.group').classList.remove('selected');
-  //     });
-  //     parent.classList.add('selected');
-  //   }
-  // };
-
-  // start: Sidebar
-  // const sidebarToggle = document.querySelector('.sidebar-toggle')
-  // const sidebarOverlay = document.querySelector('.sidebar-overlay')
-  // const sidebarMenu = document.querySelector('.sidebar-menu')
-  // const main = document.querySelector('.main')
-  // sidebarToggle.addEventListener('click', function (e) {
-  //   e.preventDefault()
-  //   main.classList.toggle('active')
-  //   sidebarOverlay.classList.toggle('hidden')
-  //   sidebarMenu.classList.toggle('-translate-x-full')
-  // })
-  // sidebarOverlay.addEventListener('click', function (e) {
-  //   e.preventDefault()
-  //   main.classList.add('active')
-  //   sidebarOverlay.classList.add('hidden')
-  //   sidebarMenu.classList.add('-translate-x-full')
-  // })
-  // document.querySelectorAll('.sidebar-dropdown-toggle').forEach(function (item) {
-  //   item.addEventListener('click', function (e) {
-  //     e.preventDefault()
-  //     const parent = item.closest('.group')
-  //     if (parent.classList.contains('selected')) {
-  //       parent.classList.remove('selected')
-  //     } else {
-  //       document.querySelectorAll('.sidebar-dropdown-toggle').forEach(function (i) {
-  //         i.closest('.group').classList.remove('selected')
-  //       })
-  //       parent.classList.add('selected')
-  //     }
-  //   })
-  // })
-  // end: Sidebar
-
-
+ 
 
 
   return (
@@ -89,6 +42,7 @@ const Sidebar = () => {
           </li>
         </ul>
       </div>
+      <div className="fixed top-0 left-0 w-full h-full bg-black/50 z-40 md:hidden sidebar-overlay"></div>
       {/* End:: Sidebar */}
     </>
   )
