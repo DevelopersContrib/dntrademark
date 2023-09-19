@@ -13,6 +13,11 @@ import Contact from "@/components/Contact";
 import Blog from "@/components/Blog";
 import Testimonial from "@/components/Testimonial";
 
+import { 
+  getPlans
+ 
+} from '@/lib/data';
+
 export const metadata: Metadata = {
   title: "DNTrademark Global Trademark Notification Platform",
   description: "dntrademark.com is a SaaS platform designed to provide an efficient and user-friendly way to check domain names against global trademark databases.",
@@ -20,7 +25,8 @@ export const metadata: Metadata = {
 };
 
 
-export default function Home() {
+export default async function Home() {
+  const plans = await getPlans();
   return (
     <main>
       <Hero />
@@ -28,7 +34,7 @@ export default function Home() {
       <About />
       <Brands />
       
-      <Pricing />
+      <Pricing plans={plans}/>
       <CTA />
      <Testimonial />
     </main>

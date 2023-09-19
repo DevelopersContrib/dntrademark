@@ -3,7 +3,8 @@ import React from "react";
 import Image from "next/image";
 import SectionHeader from "../Common/SectionHeader";
 
-const Pricing = () => {
+const Pricing = ({plans}) => {
+  console.log(plans);
   return (
     <>
       {/* <!-- ===== Pricing Table Start ===== --> */}
