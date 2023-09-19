@@ -1,14 +1,63 @@
-"use client";
-import React, { useState } from "react";
-import Image from "next/image";
-import Link from "next/link";
-import { motion } from "framer-motion";
+'use client';
+import React, { useState } from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
+import { motion } from 'framer-motion';
+
+import { Formik, Field, Form, ErrorMessage } from 'formik';
+import * as Yup from 'yup';
 
 const Signin = () => {
-  const [data, setData] = useState({
-    email: "",
-    password: "",
+  // const [data, setData] = useState({
+  //   email: '',
+  //   password: '',
+  // });
+
+  const schema = Yup.object().shape({
+    email: Yup.string().email('Invalid email address.').required('Enter your email address.'),
+    password: Yup.string().required('Password is required.').min(5).max(20),
   });
+  interface IValues {
+    email: String;
+    password: String;
+  }
+
+  const handleSignin = async (values: IValues) => {
+    try {
+      const res = await fetch('/api/signin', {
+        method: 'POST',
+        body: JSON.stringify(values),
+        headers: {
+          'Content-Type': 'application/json',
+        },
+      });
+
+      if (!res.ok) {
+        throw new Error(`HTTP error! Status: ${res.status}`);
+      }
+
+      const result = await res.json();
+      if (result.success) {
+        const user = {
+          userId: result.data.id,
+          user: result.data.first_name + ' ' + result.data.last_name,
+          email: result.data.email,
+          packageId: result.data.package_id,
+          accessToken: result.data.access_token,
+        };
+
+        localStorage.setItem('user', JSON.stringify(user));
+
+        if (user.packageId) {
+          window.location.href = '/dashboard';
+        } else {
+          window.location.href = '/pricing';
+        }
+      }
+
+      console.log(result.data);
+    } catch (error) {}
+  };
 
   return (
     <>
@@ -17,18 +66,8 @@ const Signin = () => {
         <div className="mx-auto max-w-c-1016 relative z-1 pt-10 lg:pt-15 xl:pt-20 pb-7.5 px-7.5 lg:px-15 xl:px-20">
           <div className="absolute -z-1 rounded-lg left-0 top-0 w-full h-2/3 bg-gradient-to-t from-[#F8F9FF] to-[#dee7ff47] dark:bg-gradient-to-t dark:from-[#24283E] dark:to-[#252A42]"></div>
           <div className="absolute -z-1 bottom-17.5 left-0 w-full h-1/3">
-            <Image
-              src="/images/shape/shape-dotted-light.svg"
-              alt="Dotted"
-              className="dark:hidden"
-              fill
-            />
-            <Image
-              src="/images/shape/shape-dotted-dark.svg"
-              alt="Dotted"
-              className="hidden dark:block"
-              fill
-            />
+            <Image src="/images/shape/shape-dotted-light.svg" alt="Dotted" className="dark:hidden" fill />
+            <Image src="/images/shape/shape-dotted-dark.svg" alt="Dotted" className="hidden dark:block" fill />
           </div>
 
           <motion.div
@@ -49,24 +88,15 @@ const Signin = () => {
             viewport={{ once: true }}
             className="animate_top shadow-solid-8 rounded-lg bg-white dark:bg-black dark:border dark:border-strokedark pt-7.5 xl:pt-15 px-7.5 xl:px-15"
           >
-            <h2 className="text-black dark:text-white text-3xl xl:text-sectiontitle2 font-semibold mb-15 text-center">
-              Login to Your Account
-            </h2>
+            <h2 className="text-black dark:text-white text-3xl xl:text-sectiontitle2 font-semibold mb-15 text-center">Login to Your Account</h2>
             <div className="flex flex-col">
               <div className="flex items-center gap-8">
                 <button
                   aria-label="sign with google"
-                 
                   className="mb-6 flex w-full items-center justify-center rounded-sm border border-stroke bg-[#f8f8f8] py-3 px-6 text-base text-body-color outline-none transition-all duration-300 hover:border-primary hover:bg-primary/5 hover:text-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:hover:border-primary dark:hover:bg-primary/5 dark:hover:text-primary dark:hover:shadow-none"
                 >
                   <span className="mr-3">
-                    <svg
-                      width="20"
-                      height="20"
-                      viewBox="0 0 20 20"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
+                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <g clipPath="url(#clip0_95:967)">
                         <path
                           d="M20.0001 10.2216C20.0122 9.53416 19.9397 8.84776 19.7844 8.17725H10.2042V11.8883H15.8277C15.7211 12.539 15.4814 13.1618 15.1229 13.7194C14.7644 14.2769 14.2946 14.7577 13.7416 15.1327L13.722 15.257L16.7512 17.5567L16.961 17.5772C18.8883 15.8328 19.9997 13.266 19.9997 10.2216"
@@ -96,18 +126,11 @@ const Signin = () => {
                 </button>
 
                 <button
-                aria-label="signup with github"
-                 
+                  aria-label="signup with github"
                   className="mb-6 flex w-full items-center justify-center rounded-sm border border-stroke bg-[#f8f8f8] py-3 px-6 text-base text-body-color outline-none transition-all duration-300 hover:border-primary hover:bg-primary/5 hover:text-primary dark:border-transparent dark:bg-[#2C303B] dark:text-body-color-dark dark:shadow-two dark:hover:border-primary dark:hover:bg-primary/5 dark:hover:text-primary dark:hover:shadow-none"
                 >
                   <span className="mr-3">
-                    <svg
-                      fill="currentColor"
-                      width="22"
-                      height="22"
-                      viewBox="0 0 64 64"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
+                    <svg fill="currentColor" width="22" height="22" viewBox="0 0 64 64" xmlns="http://www.w3.org/2000/svg">
                       <path d="M32 1.7998C15 1.7998 1 15.5998 1 32.7998C1 46.3998 9.9 57.9998 22.3 62.1998C23.9 62.4998 24.4 61.4998 24.4 60.7998C24.4 60.0998 24.4 58.0998 24.3 55.3998C15.7 57.3998 13.9 51.1998 13.9 51.1998C12.5 47.6998 10.4 46.6998 10.4 46.6998C7.6 44.6998 10.5 44.6998 10.5 44.6998C13.6 44.7998 15.3 47.8998 15.3 47.8998C18 52.6998 22.6 51.2998 24.3 50.3998C24.6 48.3998 25.4 46.9998 26.3 46.1998C19.5 45.4998 12.2 42.7998 12.2 30.9998C12.2 27.5998 13.5 24.8998 15.4 22.7998C15.1 22.0998 14 18.8998 15.7 14.5998C15.7 14.5998 18.4 13.7998 24.3 17.7998C26.8 17.0998 29.4 16.6998 32.1 16.6998C34.8 16.6998 37.5 16.9998 39.9 17.7998C45.8 13.8998 48.4 14.5998 48.4 14.5998C50.1 18.7998 49.1 22.0998 48.7 22.7998C50.7 24.8998 51.9 27.6998 51.9 30.9998C51.9 42.7998 44.6 45.4998 37.8 46.1998C38.9 47.1998 39.9 49.1998 39.9 51.9998C39.9 56.1998 39.8 59.4998 39.8 60.4998C39.8 61.2998 40.4 62.1998 41.9 61.8998C54.1 57.7998 63 46.2998 63 32.5998C62.9 15.5998 49 1.7998 32 1.7998Z" />
                     </svg>
                   </span>
@@ -117,87 +140,77 @@ const Signin = () => {
             </div>
             <div className="mb-10 flex items-center justify-center">
               <span className="hidden h-[1px] w-full max-w-[200px] bg-stroke dark:bg-stroke-dark sm:block"></span>
-              <p className="w-full px-5 text-center text-base text-body-color dark:text-body-color-dark">
-                Or, login with your email
-              </p>
+              <p className="w-full px-5 text-center text-base text-body-color dark:text-body-color-dark">Or, login with your email</p>
               <span className="hidden h-[1px] w-full max-w-[200px] bg-stroke dark:bg-stroke-dark sm:block"></span>
             </div>
 
-            <form>
-              <div className="flex flex-col lg:flex-row lg:justify-between gap-7.5 lg:gap-14 mb-7.5 lg:mb-12.5">
-                <input
-                  type="text"
-                  placeholder="Email"
-                  name="email"
-                  value={data.email}
-                  onChange={(e) => setData({ ...data, email: e.target.value })}
-                  className="w-full lg:w-1/2 !bg-white dark:!bg-black border-b border-stroke dark:border-strokedark focus-visible:outline-none focus:border-waterloo dark:focus:border-manatee focus:placeholder:text-black dark:focus:placeholder:text-white pb-3.5"
-                />
-
-                <input
-                  type="password"
-                  placeholder="Password"
-                  name="password"
-                  value={data.password}
-                  onChange={(e) =>
-                    setData({ ...data, password: e.target.value })
-                  }
-                  className="w-full lg:w-1/2 !bg-white dark:!bg-black border-b border-stroke dark:border-strokedark focus-visible:outline-none focus:border-waterloo dark:focus:border-manatee focus:placeholder:text-black dark:focus:placeholder:text-white pb-3.5"
-                />
-              </div>
-
-              <div className="flex flex-wrap items-center md:justify-between gap-10 xl:gap-15">
-                <div className="flex flex-wrap gap-4 md:gap-10">
-                  <div className="flex items-center mb-4">
-                    <input
-                      id="default-checkbox"
-                      type="checkbox"
-                      value=""
-                      className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+            <Formik
+              initialValues={{ email: 'kjcastanos@gmail.com', password: 'chicosci' }}
+              validationSchema={schema}
+              onSubmit={(values: IValues) => {
+                setTimeout(() => {
+                  handleSignin(values);
+                }, 500);
+              }}
+            >
+              {(formik) => (
+                <Form>
+                  <div className="flex flex-col lg:flex-row lg:justify-between gap-7.5 lg:gap-14 mb-7.5 lg:mb-12.5">
+                    <Field
+                      type="text"
+                      placeholder="Email"
+                      name="email"
+                      className="w-full lg:w-1/2 !bg-white dark:!bg-black border-b border-stroke dark:border-strokedark focus-visible:outline-none focus:border-waterloo dark:focus:border-manatee focus:placeholder:text-black dark:focus:placeholder:text-white pb-3.5"
                     />
-                    <label
-                      htmlFor="default-checkbox"
-                      className="max-w-[425px] flex cursor-pointer select-none pl-3"
-                    >
-                      Keep me signed in
-                    </label>
+                    {formik.errors.email && formik.touched.email ? <ErrorMessage name="email" component="small" className="text-danger" /> : null}
+
+                    <Field
+                      type="password"
+                      placeholder="Password"
+                      name="password"
+                      className="w-full lg:w-1/2 !bg-white dark:!bg-black border-b border-stroke dark:border-strokedark focus-visible:outline-none focus:border-waterloo dark:focus:border-manatee focus:placeholder:text-black dark:focus:placeholder:text-white pb-3.5"
+                    />
+                    {formik.errors.password && formik.touched.password ? <ErrorMessage name="password" component="small" className="text-danger" /> : null}
                   </div>
 
-                  <a href="#" className="hover:text-primary">
-                    Forgot Password?
-                  </a>
-                </div>
+                  <div className="flex flex-wrap items-center md:justify-between gap-10 xl:gap-15">
+                    <div className="flex flex-wrap gap-4 md:gap-10">
+                      <div className="flex items-center mb-4">
+                        <input
+                          id="default-checkbox"
+                          type="checkbox"
+                          value=""
+                          className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600"
+                        />
+                        <label htmlFor="default-checkbox" className="max-w-[425px] flex cursor-pointer select-none pl-3">
+                          Keep me signed in
+                        </label>
+                      </div>
 
-                <button aria-label="login with email and password" className="inline-flex items-center gap-2.5 bg-black dark:bg-btndark hover:bg-blackho ease-in-out duration-300 font-medium text-white rounded-full px-6 py-3">
-                  Log in
-                  <svg
-                    className="fill-white"
-                    width="14"
-                    height="14"
-                    viewBox="0 0 14 14"
-                    fill="none"
-                    xmlns="http://www.w3.org/2000/svg"
-                  >
-                    <path
-                      d="M10.4767 6.16664L6.00668 1.69664L7.18501 0.518311L13.6667 6.99998L7.18501 13.4816L6.00668 12.3033L10.4767 7.83331H0.333344V6.16664H10.4767Z"
-                      fill=""
-                    />
-                  </svg>
-                </button>
-              </div>
+                      <a href="#" className="hover:text-primary">
+                        Forgot Password?
+                      </a>
+                    </div>
 
-              <div className="text-center border-t border-stroke dark:border-strokedark mt-12.5 py-5">
-                <p>
-                  Don't have an account?{" "}
-                  <Link
-                    className="text-black dark:text-white hover:text-primary hover:dark:text-primary"
-                    href="/auth/signup"
-                  >
-                    Sign Up
-                  </Link>
-                </p>
-              </div>
-            </form>
+                    <button aria-label="login with email and password" className="inline-flex items-center gap-2.5 bg-black dark:bg-btndark hover:bg-blackho ease-in-out duration-300 font-medium text-white rounded-full px-6 py-3">
+                      Log in
+                      <svg className="fill-white" width="14" height="14" viewBox="0 0 14 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M10.4767 6.16664L6.00668 1.69664L7.18501 0.518311L13.6667 6.99998L7.18501 13.4816L6.00668 12.3033L10.4767 7.83331H0.333344V6.16664H10.4767Z" fill="" />
+                      </svg>
+                    </button>
+                  </div>
+
+                  <div className="text-center border-t border-stroke dark:border-strokedark mt-12.5 py-5">
+                    <p>
+                      Don't have an account?{' '}
+                      <Link className="text-black dark:text-white hover:text-primary hover:dark:text-primary" href="/auth/signup">
+                        Sign Up
+                      </Link>
+                    </p>
+                  </div>
+                </Form>
+              )}
+            </Formik>
           </motion.div>
         </div>
       </section>
