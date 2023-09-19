@@ -1,5 +1,7 @@
 /** @type {import('next').NextConfig} */
 
+const path = require('path')
+
 const nextConfig = {
   reactStrictMode: true,
   swcMinify: true,
@@ -12,6 +14,10 @@ const nextConfig = {
         port: "",
       },
     ],
+  },
+  webpack: (config, { isServer }) => {
+    config.resolve.alias['@scss'] = path.join(__dirname, 'public/scss');
+    return config;
   },
 };
 
