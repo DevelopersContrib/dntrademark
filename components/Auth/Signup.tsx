@@ -3,6 +3,7 @@ import React, { useState, useEffect } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
+import Script from 'next/script';
 
 const Signup = () => {
   const [success, setSuccess] = useState(false);
@@ -176,7 +177,7 @@ const Signup = () => {
 
             <div className="mb-10 flex items-center justify-center">
               <span className="hidden h-[1px] w-full max-w-[200px] bg-stroke dark:bg-stroke-dark sm:block"></span>
-              <p className="w-full px-5 text-center text-base text-body-color dark:text-body-color-dark">
+              <p id="test" className="w-full px-5 text-center text-base text-body-color dark:text-body-color-dark">
                 Or, register with your email
               </p>
               <span className="hidden h-[1px] w-full max-w-[200px] bg-stroke dark:bg-stroke-dark sm:block"></span>
@@ -284,6 +285,11 @@ const Signup = () => {
         </div>
       </section>
       {/* <!-- ===== SignUp Form End ===== --> */}
+      <Script >
+        {/* console.log('testing');
+        const t = document.getElementById("test");
+          alert(t); */}
+      </Script>
     </>
   );
 };
