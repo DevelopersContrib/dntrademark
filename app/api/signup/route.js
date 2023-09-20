@@ -15,14 +15,14 @@ export const POST = async (request) => {
             params.append('email', data.email);
             params.append('password', data.password);
             
-            const urlSave = process.env.API_URL+'/users/add?api_key='+process.env.API_KEY
-            
+            const urlSave = process.env.API_URL+'/users/add?api_key='+process.env.API_KEY            
             const saveRes = await axios.post(urlSave, params);
             
-            //console.log('saveRes.data.data.success',saveRes.data.data.success)
-            
             if(saveRes.data.data.success){
-                return new Response(JSON.stringify(saveRes.data.data), { status: 201 })
+                const signinUrl = process.env.API_URL+'/auth?api_key='+process.env.API_KEY+'&email='+data.email+'&password='+data.password
+                const signinRes = await axios.get(signinUrl);
+                
+                return new Response(JSON.stringify({success:true,data:signinRes.data.data}), { status: 201 })
             }else{
                 return new Response(JSON.stringify(saveRes.data.data), { status: 201 })
             }

@@ -29,13 +29,14 @@ const Signup = () => {
       firstNameError: data.firstName?'':"First name is required.",
       lastNameError: data.lastName?'':"Last name is required.",
       emailError: (data.email?'':"Email is required") || (/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(data.email) ? "":"Invalid Email"),
-      passwordError: data.password?'':"Password is required.",
+      passwordError: (data.password?'':"Password is required.") || (data.password.length < 4 || data.password.length>12 ? 'Password must be at least 4 and at max 12 characters' : ''),
     }
     setErrors(dataErrors);
 		
 	}, [data]);
   
   const handleSubmit = async() => {
+    
     const isValid = !Object.values(errors).some(v => v);
     if(isValid ){
       setData({ ...data, ['isLoading']: true})
@@ -51,6 +52,9 @@ const Signup = () => {
           const res = await response.json()
           if(res.success){
             setSuccess(true)
+            //res.data.data[0].access_token
+            //res.data.data[0].email
+            window.location.replace(window.location.origin+'/pricing');
           }else{
             alert(res.error)
           }
@@ -62,7 +66,16 @@ const Signup = () => {
       } finally {
         //set
       }
-		}
+		}else{
+      var m = ''
+      Object.entries(errors).forEach(([key, value]) => {
+        if(value){
+          console.log(`${value}`);
+          m+=value+"\n"
+        }
+      });
+      if(m)alert(m)
+    }
   }
 
   return (
