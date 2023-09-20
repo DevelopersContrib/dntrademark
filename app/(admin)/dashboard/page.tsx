@@ -2,6 +2,7 @@ import React from 'react'
 import { SlHome, SlSettings, SlEnergy } from "react-icons/sl"
 import { RiArrowRightSLine, RiMenuLine, RiSearchLine,RiNotification3Line } from "react-icons/ri"
 import Image from 'next/image'
+import Script from 'next/script'
 const page = () => {
   return (
     <>
@@ -276,6 +277,8 @@ const page = () => {
         </div>
       </main>
       {/* <!-- end: Main --> */}
+
+      <Script src='../js/script.js' />
     </>
   )
 }
