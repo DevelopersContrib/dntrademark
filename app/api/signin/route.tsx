@@ -11,10 +11,9 @@ export const POST = async (req: Request) => {
     params.append('password', data.password);
 
     const res = await axios.post(apiUrl, params);
+    const result = res.data;
 
-    console.log('API_URL', apiUrl);
-
-    return NextResponse.json(res.data);
+    return NextResponse.json(result.data);
   } catch (error) {
     return error;
   }

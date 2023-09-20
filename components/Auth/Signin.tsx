@@ -22,6 +22,10 @@ const Signin = () => {
     password: String;
   }
 
+  const capitazlizeFirstLetterOfTheString = (str: String) => {
+    return str.charAt(0).toUpperCase() + str.slice(1);
+  };
+
   const handleSignin = async (values: IValues) => {
     try {
       const res = await fetch('/api/signin', {
@@ -37,16 +41,19 @@ const Signin = () => {
       }
 
       const result = await res.json();
+
       if (result.success) {
         const user = {
-          userId: result.data.id,
-          user: result.data.first_name + ' ' + result.data.last_name,
-          email: result.data.email,
-          packageId: result.data.package_id,
-          accessToken: result.data.access_token,
+          userId: result.data[0].id,
+          user: capitazlizeFirstLetterOfTheString(result.data[0].first_name) + ' ' + capitazlizeFirstLetterOfTheString(result.data[0].last_name),
+          email: result.data[0].email,
+          packageId: result.data[0].package_id,
+          accessToken: result.data[0].access_token,
         };
 
         localStorage.setItem('user', JSON.stringify(user));
+
+        console.log(localStorage.getItem('user'));
 
         if (user.packageId) {
           window.location.href = '/dashboard';
@@ -54,8 +61,6 @@ const Signin = () => {
           window.location.href = '/pricing';
         }
       }
-
-      console.log(result.data);
     } catch (error) {}
   };
 
@@ -145,7 +150,7 @@ const Signin = () => {
             </div>
 
             <Formik
-              initialValues={{ email: 'kjcastanos@gmail.com', password: 'chicosci' }}
+              initialValues={{ email: '', password: '' }}
               validationSchema={schema}
               onSubmit={(values: IValues) => {
                 setTimeout(() => {
