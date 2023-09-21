@@ -54,7 +54,9 @@ const Signup = () => {
             setSuccess(true)
             //res.data.data[0].access_token
             //res.data.data[0].email
-            window.location.replace(window.location.origin+'/pricing');
+            setTimeout(function(){
+              window.location.replace(window.location.origin+'/pricing');
+            },2000)
           }else{
             alert(res.error)
           }
