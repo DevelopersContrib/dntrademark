@@ -32,6 +32,6 @@ export const POST = async (request) => {
         }
 	} catch (error) {
         console.log('error',error)
-        return new Response(JSON.stringify({success:false,error:error,errorMsg:"An error occurred"}), { status: 500 });
+        return new Response(JSON.stringify({urlCheck:process.env.API_URL+'/user/check?api_key='+process.env.API_KEY+'&email='+email, success:false,error:error,errorMsg:"An error occurred"}), { status: 500 });
 	}
 }
