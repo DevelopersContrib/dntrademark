@@ -24,11 +24,11 @@ import { motion } from "framer-motion";
 
 import { signIn, signOut, useSession, getProviders } from "next-auth/react";
 
-import type { GetServerSidePropsContext, InferGetServerSidePropsType } from "next";
-import { getCsrfToken } from "next-auth/react"
+// import type { GetServerSidePropsContext, InferGetServerSidePropsType } from "next";
+// import { getCsrfToken } from "next-auth/react"
 import { FaCircleNotch } from 'react-icons/fa6'
 
-export default function Signup({ csrfToken }: InferGetServerSidePropsType<typeof getServerSideProps>) {
+export default function Signup() {
   const { data: session } = useSession();
   const [providers, setProviders] = useState<any>(null);
   
@@ -472,9 +472,9 @@ export default function Signup({ csrfToken }: InferGetServerSidePropsType<typeof
 };
 
 //export default Page;
-export async function getServerSideProps(context: GetServerSidePropsContext) {
-  const csrfToken = await getCsrfToken(context)
-  return {
-    props: { csrfToken },
-  }
-}
+// export async function getServerSideProps(context: GetServerSidePropsContext) {
+//   const csrfToken = await getCsrfToken(context)
+//   return {
+//     props: { csrfToken },
+//   }
+// }
