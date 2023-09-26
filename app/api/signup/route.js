@@ -6,7 +6,7 @@ export const POST = async (request) => {
 
 	try {
         const urlCheck = process.env.API_URL+'/user/check?api_key='+process.env.API_KEY+'&email='+email
-        // wakekeke
+        // wakekekeke
         const checkRes = await axios.get(urlCheck);
         if(/*!checkRes.data.data.success &&*/ checkRes.data.data.data.length==0){
             /*const params = new URLSearchParams();
