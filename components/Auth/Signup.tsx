@@ -4,6 +4,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { motion } from "framer-motion";
 import Script from 'next/script';
+import { FaCircleNotch } from 'react-icons/fa6'
 
 const Signup = () => {
   const [success, setSuccess] = useState(false);
@@ -296,6 +297,7 @@ const Signup = () => {
 
                     <button type="button" onClick={handleSubmit} aria-label="signup with email and password" className="inline-flex items-center gap-2.5 bg-black dark:bg-btndark hover:bg-blackho ease-in-out duration-300 font-medium text-white rounded-full px-6 py-3">
                       Create Account
+                      <FaCircleNotch className="fa-spin w-6 h-6" />
                       <svg
                         className="fill-white"
                         width="14"

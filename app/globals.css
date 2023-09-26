@@ -163,3 +163,40 @@ pre {
 .active-tab {
   @apply text-black dark:text-white dark:bg-blackho bg-stroke
 }
+
+.fa-spin{
+  -webkit-animation-delay: 0s;
+  animation-delay: 0s;
+  -webkit-animation-direction: normal;
+  animation-direction: normal;
+
+  -webkit-animation-name: fa-spin;
+  animation-name: fa-spin;
+  -webkit-animation-duration:2s;
+  animation-duration:2s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+
+@-webkit-keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(1turn);
+    transform: rotate(1turn);
+  }
+}
+@keyframes fa-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg);
+  }
+  to {
+    -webkit-transform: rotate(1turn);
+    transform: rotate(1turn);
+  }
+}
