@@ -196,7 +196,7 @@ const Signin = () => {
                   <div className="text-center border-t border-stroke dark:border-strokedark mt-12.5 py-5">
                     <p>
                       Don't have an account?{' '}
-                      <Link className="text-black dark:text-white hover:text-primary hover:dark:text-primary" href="/auth/signup">
+                      <Link className="text-black dark:text-white hover:text-primary hover:dark:text-primary" href="https://dash.dntrademark.com/auth/signup">
                         Sign Up
                       </Link>
                     </p>

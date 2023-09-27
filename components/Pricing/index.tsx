@@ -55,7 +55,7 @@ const Pricing = ({plans}) => {
                 aria-label="purchase this plan"
                 className="inline-flex items-center gap-2.5 text-primary dark:text-white dark:hover:text-primary font-medium transition-all duration-300"
               >
-                <a href="/auth/signup" className="hover:pr-2 duration-500"> Get the Plan</a>
+                <a href="https://dash.dntrademark.com/auth/signup" className="hover:pr-2 duration-500"> Get the Plan</a>
                 <svg
                   width="14"
                   height="14"
