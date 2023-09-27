@@ -46,10 +46,10 @@ const Signin = () => {
         const token = btoa(result.token);
 
         window.location.href = 'https://dash.dntrademark.com/?token=' + token;
-      } else {
-        alert('Invalid login credentials.');
       }
-    } catch (error) {}
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   return (
