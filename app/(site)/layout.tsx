@@ -6,6 +6,8 @@ import Lines from "@/components/Lines";
 import ScrollToTop from "@/components/ScrollToTop";
 import { Inter } from "next/font/google";
 import { ThemeProvider } from "next-themes";
+import AuthProvider from "@/app/context/AuthProvider";
+
 const inter = Inter({ subsets: ["latin"] });
 import "../globals.css";
 
@@ -19,19 +21,21 @@ export default function RootLayout({
   return (
     <html lang="eng">
       <body className={`dark:bg-black`}>
-        <ThemeProvider
-          enableSystem={false}
-          attribute="class"
-          defaultTheme="light"
-        >
+        <AuthProvider>
+          <ThemeProvider
+            enableSystem={false}
+            attribute="class"
+            defaultTheme="light"
+          >
 
-            <Lines />
-            <Header />
-            <ToasterContext />
-            {children}
-            <Footer />
-            <ScrollToTop />
-        </ThemeProvider>
+              <Lines />
+              <Header />
+              <ToasterContext />
+              {children}
+              <Footer />
+              <ScrollToTop />
+          </ThemeProvider>
+        </AuthProvider>
       </body>
     </html>
   );

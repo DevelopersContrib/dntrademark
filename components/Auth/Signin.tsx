@@ -42,26 +42,14 @@ const Signin = () => {
 
       const result = await res.json();
 
-      if (result.success) {
-        const user = {
-          userId: result.data[0].id,
-          user: capitazlizeFirstLetterOfTheString(result.data[0].first_name) + ' ' + capitazlizeFirstLetterOfTheString(result.data[0].last_name),
-          email: result.data[0].email,
-          packageId: result.data[0].package_id,
-          accessToken: result.data[0].access_token,
-        };
+      if (result.token) {
+        const token = btoa(result.token);
 
-        localStorage.setItem('user', JSON.stringify(user));
-
-        console.log(localStorage.getItem('user'));
-
-        if (user.packageId) {
-          window.location.href = '/dashboard';
-        } else {
-          window.location.href = '/pricing';
-        }
+        window.location.href = 'https://dash.dntrademark.com/?token=' + token;
       }
-    } catch (error) {}
+    } catch (error) {
+      console.log(error);
+    }
   };
 
   return (
@@ -208,7 +196,7 @@ const Signin = () => {
                   <div className="text-center border-t border-stroke dark:border-strokedark mt-12.5 py-5">
                     <p>
                       Don't have an account?{' '}
-                      <Link className="text-black dark:text-white hover:text-primary hover:dark:text-primary" href="/auth/signup">
+                      <Link className="text-black dark:text-white hover:text-primary hover:dark:text-primary" href="https://dash.dntrademark.com/auth/signup">
                         Sign Up
                       </Link>
                     </p>
