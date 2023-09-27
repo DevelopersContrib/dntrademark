@@ -42,24 +42,12 @@ const Signin = () => {
 
       const result = await res.json();
 
-      if (result.success) {
-        const user = {
-          userId: result.data[0].id,
-          user: capitazlizeFirstLetterOfTheString(result.data[0].first_name) + ' ' + capitazlizeFirstLetterOfTheString(result.data[0].last_name),
-          email: result.data[0].email,
-          packageId: result.data[0].package_id,
-          accessToken: result.data[0].access_token,
-        };
+      if (result.token) {
+        const token = btoa(result.token);
 
-        localStorage.setItem('user', JSON.stringify(user));
-
-        console.log(localStorage.getItem('user'));
-
-        if (user.packageId) {
-          window.location.href = '/dashboard';
-        } else {
-          window.location.href = '/pricing';
-        }
+        window.location.href = 'https://dash.dntrademark.com/?token=' + token;
+      } else {
+        alert('Invalid login credentials.');
       }
     } catch (error) {}
   };
