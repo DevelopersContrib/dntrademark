@@ -17,6 +17,6 @@ export const POST = async (req: Request) => {
 
     return NextResponse.json(result);
   } catch (error) {
-    console.log(error);
+    return error;
   }
 };
