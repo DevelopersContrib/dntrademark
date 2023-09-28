@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import SectionHeader from "../Common/SectionHeader";
 import { PackagesProps } from "@/types/packages";
-import Packages from "./packages";
+import Packages from "./Packages";
 
 const Pricing = () => {
   const [plans, setPlans] = useState<PackagesProps[]>([]);
