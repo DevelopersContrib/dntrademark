@@ -31,7 +31,13 @@ const menuData: Menu[] = [
     id: 5,
     title: "Sign In",
     newTab: false,
-    path: "/auth/signin"
+    path: "https://dash.dntrademark.com/auth/signin"
+  },
+  {
+    id: 6,
+    title: "Sign Up",
+    newTab: false,
+    path: "https://dash.dntrademark.com/auth/signup"
   }
 ];
 
