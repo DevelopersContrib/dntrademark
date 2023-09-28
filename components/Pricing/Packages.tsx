@@ -1,7 +1,7 @@
 import { PackagesProps } from '@/types/packages'
 import React from 'react'
 
-const Packages = (props: PackagesProps) => {
+const packages = (props: PackagesProps) => {
   return (
     <div key={props.id} className="animate_top md:w-[45%] lg:w-1/3 group relative bg-white dark:bg-blacksection rounded-lg shadow-solid-10 dark:shadow-none border border-stroke dark:border-strokedark p-7.5 xl:p-12.5">
       <h3 className="text-black dark:text-white font-bold text-3xl xl:text-sectiontitle3 mb-7.5">
@@ -40,4 +40,4 @@ const Packages = (props: PackagesProps) => {
   )
 }
 
-export default Packages
+export default packages
