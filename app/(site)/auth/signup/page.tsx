@@ -446,7 +446,7 @@ export default function Signup() {
                                 Already have an account?{" "}
                                 <Link
                                   className="text-black dark:text-white hover:text-primary dark:hover:text-primary"
-                                  href="/auth/signin"
+                                  href="https://dash.dntrademark.com/auth/signin"
                                 >
                                   Sign In
                                 </Link>

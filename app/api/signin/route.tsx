@@ -4,7 +4,8 @@ import axios from 'axios';
 export const POST = async (req: Request) => {
   try {
     const data = await req.json();
-    const apiUrl = process.env.API_URL + 'auth/login?api_key=' + process.env.API_KEY;
+    // const apiUrl = process.env.API_URL + 'auth/login?api_key=' + process.env.API_KEY;
+    const apiUrl = 'https://api.dntrademark.com/api/v1/auth/login?api_key=6334aed4bdce9855f400653800596920';
 
     console.log(apiUrl);
 
@@ -17,6 +18,6 @@ export const POST = async (req: Request) => {
 
     return NextResponse.json(result);
   } catch (error) {
-    console.log(error);
+    return error;
   }
 };
