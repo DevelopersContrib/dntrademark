@@ -3,7 +3,7 @@ import { useEffect, useState } from "react";
 import Image from "next/image";
 import SectionHeader from "../Common/SectionHeader";
 import { PackagesProps } from "@/types/packages";
-import Packages from "./packages";
+import PackagePlan from "./PackagePlan";
 
 const Pricing = () => {
   const [plans, setPlans] = useState<PackagesProps[]>([]);
@@ -63,7 +63,7 @@ const Pricing = () => {
             {/* <!-- Pricing Item --> */}
 
             {plans.map((plan: PackagesProps) => (
-              <Packages key={plan.id} {...plan} />
+              <PackagePlan key={plan.id} {...plan} />
             ))}
 
           </div>
