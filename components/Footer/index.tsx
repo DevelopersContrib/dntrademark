@@ -109,14 +109,7 @@ const Footer = () => {
                         Partners
                       </a>
                     </li>
-                    <li>
-                      <a
-                        href="/#pricing"
-                        className="inline-block hover:text-primary mb-3"
-                      >
-                        Pricing
-                      </a>
-                    </li>
+                    
                   </ul>
                 </motion.div>
 
