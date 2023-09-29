@@ -33,7 +33,7 @@ const Thanks = () => {
                   
              
                   <p>
-                    <a href="https://contrib.com/to/dntrademark.com" className="dark:text-white font-bold tracking-tight text-gray-900 bg-gradient-to-r from-primary to-black bg-clip-text text-transparent">
+                    <a href="/contribute" className="dark:text-white font-bold tracking-tight text-gray-900 bg-gradient-to-r from-primary to-black bg-clip-text text-transparent">
                   #1. Contribute :
                    </a>
                       If you're excited about what we're building and want to be part of our journey beyond beta access, consider contributing to our mission. Your support helps us innovate faster and better. 🙌
@@ -41,7 +41,7 @@ const Thanks = () => {
                   </p>
                   
                   <p>
-                    <a href="#invest" className="dark:text-white font-bold tracking-tight text-gray-900 bg-gradient-to-r from-primaryho to-black bg-clip-text text-transparent">
+                    <a href="/invest" className="dark:text-white font-bold tracking-tight text-gray-900 bg-gradient-to-r from-primaryho to-black bg-clip-text text-transparent">
                         #2. Invest Early : 
                     </a>
                     Ready to take a deeper dive into DnTrademark? Explore the opportunity to become an early investor. Join us in shaping the future of domain and trademark management. Your investment fuels our growth and impact. 💼
