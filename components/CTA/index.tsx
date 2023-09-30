@@ -62,7 +62,7 @@ const CTA = () => {
                   className="hidden xl:block"
                 />
                 <a
-                  href="https://dash.dntrademark.com/auth/signup"
+                  href="/betasignup"
                   className="inline-flex items-center gap-2.5 font-medium text-white dark:text-black bg-black dark:bg-white rounded-full py-3 px-6 hover:opacity-90"
                 >
                   Sign up free
