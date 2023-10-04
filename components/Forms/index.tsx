@@ -1,13 +1,13 @@
 import React from 'react';
-import NewsletterForm from './vnoc-newsletter';
+import Script from 'next/script';
 
 const VNOC_newsletter: React.FC = () => {
   return (
     <div>
-        <p className="mb-4 w-[90%]">
-                    Subscribe to receive future updates
-        </p>
-      <NewsletterForm />
+       
+        <div className="widget1">
+        <Script src="https://manage.vnoc.com/widgets/leads?domain=dntrademark.com&c=black&class=widget1"/>
+        </div>
     </div>
   );
 };

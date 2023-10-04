@@ -4,6 +4,7 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import VNOC_newsletter from "../Forms";
 
+
 const Footer = () => {
   return (
     <>
@@ -180,7 +181,8 @@ const Footer = () => {
                     Newsletter
                   </h4>
                 
-                  <VNOC_newsletter />
+                  <VNOC_newsletter/>
+                  
                 </motion.div>
               </div>
             </div>
