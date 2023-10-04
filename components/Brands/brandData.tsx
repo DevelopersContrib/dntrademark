@@ -40,8 +40,8 @@ const brandData: Brand[] = [
     id: 0.7,
     name: "Cloudflare",
     href: "https://cloudflare.com",
-    image: "/images/brand/brand-cloudflare.svg",
-    imageLight: "/images/brand/brand-cloudflare.svg",
+    image: "/images/brand/cloudfront.svg",
+    imageLight: "/images/brand/cloudfront.svg",
   },
 ];
 
