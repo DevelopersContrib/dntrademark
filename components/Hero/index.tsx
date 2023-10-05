@@ -15,62 +15,52 @@ const Hero = () => {
 
   return (
     <>
-      <section className="hero pt-35 md:pt-40 xl:pt-46 pb-20 xl:pb-25 overflow-hidden min-h-screen">
-        <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0 align-middle">
+      <section className="pt-35 md:pt-40 xl:pt-46 pb-20 xl:pb-25 overflow-hidden min-h-screen">
+        <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0 align-middle bg-scroll bg-no-repeat bg-right-top bg-[url('/images/hero/dnt-monitorlizard2.png')]">
           <div className="flex lg:items-center lg:gap-8 xl:gap-32.5 ">
-            <div className=" md:w-1/2">
+            <div className=" md:w-1/3">
               <h4 className="text-black dark:text-white text-lg font-medium mb-4.5">
-                🔥 If You Own Digital Properties
+                🔥 Secure Your Domain with 
+                Global Trademark Notifications
               </h4>
-              <h1 className="text-black dark:text-white text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl bg-gradient-to-r from-black to-primary bg-clip-text text-transparent">
-              Secure Your Domain with 
-                Global Trademark Notifications               
+              <h1 className="text-black dark:text-white text-5xl font-bold tracking-tight text-gray-900 sm:text-8xl bg-gradient-to-r from-black to-primary bg-clip-text text-transparent">
+                
+                Keeping an eye on your valuable URL's             
               </h1>
-              <p >
+              <h3 className="text-black dark:text-white font-bold tracking-tight text-gray-900 bg-gradient-to-r from-black to-primary bg-clip-text text-transparent">
               Eliminate the risk of legal complications by ensuring your domain is unique globally. Use dntrademark.com for precise, speedy and timely notifications.
-              </p>
+              </h3>
 
               <div className="mt-10">
               
               </div>
             </div>
 
-            <div className="animate_right md:w-1/2 hidden lg:block">
+            <div className="animate_right md:w-2/3 hidden lg:block">
               <div className="relative 2xl:-mr-7.5">
                 <Image
                   src="/images/shape/shape-01.png"
                   alt="shape"
                   width={46}
                   height={246}
-                  className="absolute -left-11.5 top-0"
+                  className="absolute right bottom-30 z-10"
                 />  
                 <Image
                   src="/images/shape/shape-02.svg"
                   alt="shape"
                   width={36.9}
                   height={36.7}
-                  className="absolute right-0 bottom-0 z-10"
+                  className="absolute right-30 bottom-30 z-10"
                 />
                 <Image
                   src="/images/shape/shape-03.svg"
                   alt="shape"
                   width={21.64}
                   height={21.66}
-                  className="absolute -right-6.5 bottom-0 z-1"
+                  className="absolute -right-2 bottom-25 z-1"
                 />
-                <div className=" relative aspect-[700/444] w-full">
-                  <Image
-                    className="dark:hidden shadow-solid-l"
-                    src="/images/hero/hero-light.svg"
-                    alt="Hero"
-                    fill
-                  />
-                  <Image
-                    className="hidden dark:block shadow-solid-l"
-                    src="/images/hero/hero-dark.svg"
-                    alt="Hero"
-                    fill
-                  />
+                <div className=" relative aspect-[900/544] w-full overflow-hidden">
+                  
                 </div>
               </div>
             </div>
