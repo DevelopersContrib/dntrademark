@@ -39,7 +39,7 @@ const Header = () => {
         <div className="w-full lg:w-1/4 flex items-center justify-between">
           <a href="/">
             <Image
-              src="/images/logo/logo-dntrademark-final.png"
+              src="/images/logo/logo-dntrademark-onblack.png"
               alt="DN trademark your domain trademark notification service"
               width={300}
               height={80}

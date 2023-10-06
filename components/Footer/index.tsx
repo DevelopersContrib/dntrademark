@@ -49,14 +49,14 @@ const Footer = () => {
                 </a>
 
                 <p className="mt-5 mb-10">
-                is a SaaS platform designed to provide an efficient and user-friendly way to check domain names against global trademark databases.
+                is a SaaS platform designed to provide an efficient and user-friendly way to check and monitor domain names against global trademark databases and automate preventive and defensive actions against your digital assets.
                 </p>
 
                 <p className="uppercase tracking-[5px] text-sectiontitle mb-1.5">
                   contact
                 </p>
                 <a
-                  href="#"
+                  href="mailto:support@dntrademark.com"
                   className="text-black dark:text-white font-medium text-itemtitle"
                 >
                   support@dntrademark.com
@@ -97,7 +97,7 @@ const Footer = () => {
                     </li>
                     <li>
                       <a
-                        href="/features"
+                        href="#features"
                         className="inline-block hover:text-primary mb-3"
                       >
                         Features
@@ -105,10 +105,10 @@ const Footer = () => {
                     </li>
                     <li>
                       <a
-                        href="/partners"
+                        href="https://domaindirectory.com/servicepage/?domain=dntrademark.com"
                         className="inline-block hover:text-primary mb-3"
                       >
-                        Partners
+                        Build & Invest
                       </a>
                     </li>
                     
@@ -140,10 +140,10 @@ const Footer = () => {
                   <ul>
                     <li>
                       <a
-                        href="/#about"
+                        href="/faq"
                         className="inline-block hover:text-primary mb-3"
                       >
-                        Company
+                        FAQ
                       </a>
                     </li>
                     
@@ -216,12 +216,12 @@ const Footer = () => {
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-primary">
+                  <a href="/privacypolicy" className="hover:text-primary">
                     Privacy Policy
                   </a>
                 </li>
                 <li>
-                  <a href="#" className="hover:text-primary">
+                  <a href="/termsofservice" className="hover:text-primary">
                     Terms of Service
                   </a>
                 </li>
@@ -246,7 +246,8 @@ const Footer = () => {
               viewport={{ once: true }}
               className="animate_top"
             >
-              <p>&copy; 2023 to 2025 DNTrademark. All rights reserved. Built by <a href="http://vnoc.com">VNOC</a></p>
+              <p>&copy; 2023 to 2025 DNTrademark. All rights reserved.  <p>DN Trademark is a proud member of Agentdao, produced and built by <a href="https://vnoc.com">VNOC</a>.</p>
+             Built by <a href="http://vnoc.com">VNOC</a></p>
             </motion.div>
 
             <motion.div
