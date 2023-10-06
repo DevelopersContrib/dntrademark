@@ -46,7 +46,7 @@ const Header = () => {
               className="w-full hidden dark:block"
             />
             <Image
-              src="/images/logo/logo-dntrademark-final.png"
+              src="/images/logo/logo-dntrademark-onwhite.png"
               alt="DN trademark your domain trademark notification service"
               width={300}
               height={80}

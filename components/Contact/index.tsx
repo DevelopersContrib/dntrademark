@@ -2,6 +2,8 @@
 import React from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import ContactForm from "./form";
+
 
 const Contact = () => {
   /**
@@ -56,85 +58,12 @@ const Contact = () => {
               viewport={{ once: true }}
               className="animate_top w-full md:w-3/5 lg:w-3/4 shadow-solid-8 rounded-lg bg-white dark:bg-black dark:border dark:border-strokedark p-7.5 xl:p-15"
             >
+              
               <h2 className="text-black dark:text-white text-3xl xl:text-sectiontitle2 font-semibold mb-15">
                 Send a message
               </h2>
-
-              <form
-                action="https://formbold.com/s/unique_form_id"
-                method="POST"
-              >
-                <div className="flex flex-col lg:flex-row lg:justify-between gap-7.5 lg:gap-14 mb-7.5">
-                  <input
-                    type="text"
-                    placeholder="Full name"
-                    className="w-full lg:w-1/2 bg-transparent border-b border-stroke dark:border-strokedark focus-visible:outline-none focus:border-waterloo dark:focus:border-manatee focus:placeholder:text-black dark:focus:placeholder:text-white pb-3.5"
-                  />
-
-                  <input
-                    type="email"
-                    placeholder="Email address"
-                    className="w-full lg:w-1/2 bg-transparent border-b border-stroke dark:border-strokedark focus-visible:outline-none focus:border-waterloo dark:focus:border-manatee focus:placeholder:text-black dark:focus:placeholder:text-white pb-3.5"
-                  />
-                </div>
-
-                <div className="flex flex-col lg:flex-row lg:justify-between gap-7.5 lg:gap-14 mb-12.5">
-                  <input
-                    type="text"
-                    placeholder="Subject"
-                    className="w-full lg:w-1/2 bg-transparent border-b border-stroke dark:border-strokedark focus-visible:outline-none focus:border-waterloo dark:focus:border-manatee focus:placeholder:text-black dark:focus:placeholder:text-white pb-3.5"
-                  />
-
-                  <input
-                    type="text"
-                    placeholder="Phone number"
-                    className="w-full lg:w-1/2 bg-transparent border-b border-stroke dark:border-strokedark focus-visible:outline-none focus:border-waterloo dark:focus:border-manatee focus:placeholder:text-black dark:focus:placeholder:text-white pb-3.5"
-                  />
-                </div>
-
-                <div className="flex mb-11.5">
-                  <textarea
-                    placeholder="Message"
-                    rows={4}
-                    className="w-full bg-transparent border-b border-stroke dark:border-strokedark focus-visible:outline-none focus:border-waterloo dark:focus:border-manatee focus:placeholder:text-black dark:focus:placeholder:text-white"
-                  ></textarea>
-                </div>
-
-                <div className="flex flex-wrap xl:justify-between ">
-                  <div className="flex mb-4 md:mb-0">
-                    <input
-                      id="default-checkbox"
-                      type="checkbox"
-                      value=""
-                      className="w-4 h-4 text-blue-600 bg-gray-100 border-gray-300 rounded focus:ring-blue-500 dark:focus:ring-blue-600 dark:ring-offset-gray-800 focus:ring-2 dark:bg-gray-700 dark:border-gray-600 mt-2"
-                    />
-                    <label
-                      htmlFor="default-checkbox"
-                      className="max-w-[425px] flex cursor-pointer select-none pl-5 text-sm"
-                    >
-                      By clicking Checkbox, you agree to use our “Form” terms
-                      And consent cookie usage in browser.
-                    </label>
-                  </div>
-
-                  <button aria-label="send message" className="inline-flex items-center gap-2.5 bg-black hover:bg-blackho ease-in-out duration-300 dark:bg-btndark font-medium text-white rounded-full px-6 py-3">
-                    Send Message
-                    <svg
-                      className="fill-white"
-                      width="14"
-                      height="14"
-                      viewBox="0 0 14 14"
-                      fill="none"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        d="M10.4767 6.16664L6.00668 1.69664L7.18501 0.518311L13.6667 6.99998L7.18501 13.4816L6.00668 12.3033L10.4767 7.83331H0.333344V6.16664H10.4767Z"
-                        fill=""
-                      />
-                    </svg>
-                  </button>
-                </div>
-              </form>
+              <ContactForm />
+              
             </motion.div>
 
             <motion.div
@@ -161,16 +90,16 @@ const Contact = () => {
 
               <div className="mb-7 5">
                 <h4 className="font-medium text-black dark:text-white text-metatitle3 mb-4">
-                  Our Loaction
+                  Our Location
                 </h4>
-                <p>290 Maryam Springs 260, Courbevoie, Paris, France</p>
+                <p>1201 N. Orange Street Suite 7160 Wilmington 19801 Delaware.</p>
               </div>
               <div className="mb-7 5">
                 <h4 className="font-medium text-black dark:text-white text-metatitle3 mb-4">
                   Email Address
                 </h4>
                 <p>
-                  <a href="#">yourmail@domainname.com</a>
+                  <a href="mailto:admin@vnoc.com">admin@dntrademark.com</a>
                 </p>
               </div>
               <div>
@@ -178,7 +107,7 @@ const Contact = () => {
                   Phone Number
                 </h4>
                 <p>
-                  <a href="#">+009 42334 6343 843</a>
+                  <a href="tel:18887333772">Call +1 888 7333 772</a>
                 </p>
               </div>
             </motion.div>
