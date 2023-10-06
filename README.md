@@ -4,7 +4,7 @@
 
 Here are the steps you need to follow to install the dependencies.
 
-1.Download and extract the template from **Next.js Templates.**
+1.Download the code
 
 2.**cd** into the template directory then run this command to install all the dependencies
     
