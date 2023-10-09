@@ -28,7 +28,7 @@ const Hero = () => {
                 Keeping an eye on your valuable URL's             
               </h1>
               <h3 className="text-black dark:text-white font-bold tracking-tight text-gray-900 bg-gradient-to-r from-black to-primary bg-clip-text text-transparent">
-              Eliminate the risk of legal complications by ensuring your domain is unique globally. 
+              Eliminate the risk of legal complications by ensuring your domain is protected. 
               Use dntrademark.com for precise, speedy and timely notifications.
               </h3>
 
