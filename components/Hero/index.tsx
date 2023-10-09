@@ -15,10 +15,10 @@ const Hero = () => {
 
   return (
     <>
-      <section className="pt-35 md:pt-40 xl:pt-46 pb-20 xl:pb-25 overflow-hidden min-h-screen">
-        <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0 align-middle bg-scroll bg-no-repeat bg-right-top bg-[url('/images/hero/dnt-monitorlizard2.png')]">
-          <div className="flex lg:items-center lg:gap-8 xl:gap-32.5 ">
-            <div className=" md:w-1/3">
+      <section className="pt-35 md:pt-40 xl:pt-46 pb-20 xl:pb-25 overflow-hidden min-h-screen  bg-scroll backdrop-blur-md bg-no-repeat bg-right  bg-[url('/images/hero/dnt-monitorlizard3.svg')]">
+        <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0 align-middle">
+          <div className="flex lg:items-center lg:gap-8 xl:gap-32.5">
+            <div className="md:w-1/2">
               <h4 className="text-black dark:text-white text-lg font-medium mb-4.5">
                 🔥 Secure Your Domain with 
                 Global Trademark Notifications
@@ -37,28 +37,28 @@ const Hero = () => {
               </div>
             </div>
 
-            <div className="animate_right md:w-2/3 hidden lg:block">
+            <div className="animate_right md:w-1/2 hidden lg:block">
               <div className="relative 2xl:-mr-7.5">
                 <Image
                   src="/images/shape/shape-01.png"
                   alt="shape"
                   width={46}
                   height={246}
-                  className="absolute right bottom-30 z-10"
+                  className="absolute right bottom-30 z-10 hover:animate-spin"
                 />  
                 <Image
                   src="/images/shape/shape-02.svg"
                   alt="shape"
                   width={36.9}
                   height={36.7}
-                  className="absolute right-30 bottom-30 z-10"
+                  className="absolute right-30 bottom-30 z-10 hover:animate-spin"
                 />
                 <Image
                   src="/images/shape/shape-03.svg"
                   alt="shape"
                   width={21.64}
                   height={21.66}
-                  className="absolute -right-2 bottom-25 z-1"
+                  className="absolute -right-2 bottom-25 z-1 hover:animate-spin"
                 />
                 <div className=" relative aspect-[900/544] w-full overflow-hidden">
                   

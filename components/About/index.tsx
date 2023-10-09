@@ -30,13 +30,13 @@ const About = () => {
               className="animate_left hidden md:block md:w-1/2 relative mx-auto aspect-[588/526.5]"
             >
               <Image
-                src="/images/about/about-light-01.png"
+                src="/images/about/about-dntrademark1.png"
                 alt="About"
                 className="dark:hidden"
                 fill
               />
               <Image
-                src="/images/about/about-dark-01.png"
+                src="/images/about/about-dntrademark1.png"
                 alt="About"
                 className="hidden dark:block"
                 fill
@@ -73,7 +73,7 @@ const About = () => {
                 </span>
               </h2>
               <p>
-              Users receive alerts if there are any new trademark filings or conflicts related to their domains.
+              Users receive alerts if there are any new trademark filings or hits related to their domains.
               </p>
 
               <div className="mt-7.5 flex items-center gap-5">
@@ -140,7 +140,7 @@ const About = () => {
                 </span>
               </h2>
               <p>
-              At DNTrademark, we understand that your online presence is a valuable asset, and safeguarding it from legal complexities is paramount. Our mission is to empower domain owners and brand managers with a comprehensive solution designed to mitigate potential trademark conflicts and legal issues related to domain assets.
+              At DNTrademark, we understand that your domains are part of your digital assets, and safeguarding it from legal complexities is paramount. Our mission is to empower domain owners and brand managers with a simple solution designed to mitigate potential trademark conflicts and legal issues related to domain assets.
               </p>
               <div>
                 
@@ -165,13 +165,13 @@ const About = () => {
               className="animate_right hidden md:block md:w-1/2 relative mx-auto aspect-[588/526.5]"
             >
               <Image
-                src="./images/about/about-light-02.svg"
+                src="/images/about/about-dntrademark3.png"
                 alt="About"
                 className="dark:hidden"
                 fill
               />
               <Image
-                src="./images/about/about-dark-02.svg"
+                src="/images/about/about-dntrademark3.png"
                 alt="About"
                 className="hidden dark:block"
                 fill
