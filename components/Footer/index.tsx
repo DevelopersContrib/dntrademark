@@ -111,6 +111,14 @@ const Footer = () => {
                         Build & Invest
                       </a>
                     </li>
+                    <li>
+                      <a
+                        href="https://domaindirectory.com/servicepage/?domain=dntrademark.com"
+                        className="inline-block hover:text-primary mb-3"
+                      >
+                        Partner
+                      </a>
+                    </li>
                     
                   </ul>
                 </motion.div>
