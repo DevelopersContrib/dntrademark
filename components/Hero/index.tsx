@@ -15,7 +15,7 @@ const Hero = () => {
 
   return (
     <>
-      <section className="pt-35 md:pt-40 xl:pt-46 pb-20 xl:pb-25 overflow-hidden min-h-screen  bg-scroll backdrop-blur-md bg-no-repeat bg-right  bg-[url('/images/hero/dnt-monitorlizard3.svg')]">
+      <section className="pt-35 md:pt-40 xl:pt-46 pb-20 xl:pb-25 overflow-hidden min-h-screen  bg-scroll backdrop-blur-md bg-no-repeat bg-right-top bg-[url('/images/hero/monitor-lizard-1c.png')]">
         <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0 align-middle">
           <div className="flex lg:items-center lg:gap-8 xl:gap-32.5">
             <div className="md:w-1/2">
