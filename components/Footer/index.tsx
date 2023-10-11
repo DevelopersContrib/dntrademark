@@ -119,6 +119,14 @@ const Footer = () => {
                         Partner
                       </a>
                     </li>
+                    <li>
+                      <a
+                        href="/referral"
+                        className="inline-block hover:text-primary mb-3"
+                      >
+                        Referral Program
+                      </a>
+                    </li>
                     
                   </ul>
                 </motion.div>
