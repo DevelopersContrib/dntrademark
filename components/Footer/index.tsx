@@ -172,6 +172,14 @@ const Footer = () => {
                         Contact Us
                       </a>
                     </li>
+                    <li>
+                      <a
+                        href="https://contrib.com/to/dntrademark.com"
+                        className="inline-block hover:text-primary mb-3"
+                      >
+                        Contribute To DNTrademark
+                      </a>
+                    </li>
                   </ul>
                 </motion.div>
 

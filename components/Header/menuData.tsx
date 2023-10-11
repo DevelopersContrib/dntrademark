@@ -13,6 +13,12 @@ const menuData: Menu[] = [
     newTab: false,
     path: "/#features"
   },
+  {
+    id: 3,
+    title: "Join The Team",
+    newTab: false,
+    path: "https://domaindirectory.com/servicepage/?domain=dntrademark.com"
+  },
 
   
   
