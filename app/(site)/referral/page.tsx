@@ -11,7 +11,7 @@ export const metadata: Metadata = {
 
 const ReferralPage = () => {
   return (
-    <div className="pt-40 pb-20">
+    <div className="pt-40 pb-20 relative">
       <VNOC_referral />
     </div>
   );

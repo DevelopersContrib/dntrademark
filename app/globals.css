@@ -199,3 +199,11 @@ pre {
     transform: rotate(1turn);
   }
 }
+
+.referral-widget-2--content {
+	position: absolute;
+	top: 104px;
+}
+.lizard-relative {
+	height: 300px;
+}
