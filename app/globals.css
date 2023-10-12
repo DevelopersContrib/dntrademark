@@ -207,3 +207,6 @@ pre {
 .lizard-relative {
 	height: 300px;
 }
+.referral-content--custom-text {
+	color: #333 !important;
+}
