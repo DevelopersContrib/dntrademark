@@ -20,16 +20,16 @@ const Hero = () => {
           <div className="flex lg:items-center lg:gap-8 xl:gap-32.5">
             <div className="md:w-1/2">
               <h4 className="text-black dark:text-white text-lg font-medium mb-4.5">
-                🔥 Secure Your Domain with 
-                Global Trademark Notifications
+                🔥 Protect Your Digital Assets with 
+                Instant Trademark Notifications
               </h4>
               <h1 className="text-black dark:text-white text-5xl font-bold tracking-tight text-gray-900 sm:text-8xl bg-gradient-to-r from-black to-primary bg-clip-text text-transparent">
                 
                 Keeping an eye on your valuable URL's             
               </h1>
               <h3 className="text-black dark:text-white font-bold tracking-tight text-gray-900 bg-gradient-to-r from-black to-primary bg-clip-text text-transparent">
-              Eliminate the risk of legal complications by ensuring your domain is protected. 
-              Use dntrademark.com for precise, speedy and timely notifications.
+              Reduce risk of legal complications by ensuring your domains are protected and aware.
+              Use DNTrademark.com for monitoring and precise, speedy, automated notifications.
               </h3>
 
               <div className="mt-10">

@@ -49,7 +49,7 @@ const Footer = () => {
                 </a>
 
                 <p className="mt-5 mb-10">
-                is a SaaS platform designed to provide an efficient and user-friendly way to check and monitor domain names against global trademark databases and automate preventive and defensive actions against your digital assets.
+                is a SaaS platform designed to provide an efficient and user-friendly way to check and monitor domain names against global trademark databases and use DNTrademark data to automate preventive and defensive actions against your digital assets.
                 </p>
 
                 <p className="uppercase tracking-[5px] text-sectiontitle mb-1.5">
@@ -100,7 +100,7 @@ const Footer = () => {
                         href="#features"
                         className="inline-block hover:text-primary mb-3"
                       >
-                        Features
+                        Value Proposition
                       </a>
                     </li>
                     <li>
@@ -271,7 +271,8 @@ const Footer = () => {
               className="animate_top"
             >
               <p>&copy; 2023 to 2025 DNTrademark. All rights reserved.  <p>DN Trademark is a proud member of Agentdao, produced and built by <a href="https://vnoc.com">VNOC</a>.</p>
-             Built by <a href="http://vnoc.com">VNOC</a></p>
+             Built by <a href="http://vnoc.com">VNOC</a>| An <a href="https://ecorp.com">Ecorp Entity</a></p>
+             
             </motion.div>
 
             <motion.div
