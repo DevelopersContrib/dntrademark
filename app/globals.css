@@ -210,3 +210,9 @@ pre {
 .referral-content--custom-text {
 	color: #333 !important;
 }
+.referral-content--title {
+	text-align: center;
+}
+.referral-content--welcome-text {
+	text-align: center;
+}
