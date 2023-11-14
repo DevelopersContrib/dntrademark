@@ -31,7 +31,7 @@ const FAQ = () => {
               className="hidden dark:block"
             />
           </div>
-          <div className="flex flex-wrap md:flex-nowrap md:items-center gap-8 xl:gap-32.5">
+          <div className="flex flex-wrap md:flex-nowrap md:items-center1 gap-8 xl:gap-32.5">
             <motion.div
               variants={{
                 hidden: {
