@@ -19,6 +19,12 @@ const menuData: Menu[] = [
     newTab: false,
     path: "https://domaindirectory.com/servicepage/?domain=dntrademark.com"
   },
+  {
+    id: 4,
+    title: "Join the Conversation",
+    newTab: false,
+    path: "https://t.me/dntrademark"
+  },
 
   
   
