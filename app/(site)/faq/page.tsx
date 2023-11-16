@@ -4,8 +4,8 @@ import FAQ from "@/components/FAQ";
 
 
 export const metadata: Metadata = {
-  title: "Invest in DN Trademark",
-  description: "Invest early in DN Trademark",
+  title: "FAQ DN Trademark",
+  description: "Questions? Lets break it down one by one. ",
   // other metadata
 };
 
