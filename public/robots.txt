@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://dntrademark.com
+
+# Sitemaps
+Sitemap: https://dntrademark.com/sitemap.xml
