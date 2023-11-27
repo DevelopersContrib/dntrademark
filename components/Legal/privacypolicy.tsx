@@ -24,7 +24,7 @@ const PrivacyPolicyText = () => {
                 <h1>Privacy Statement</h1>
                 <p>
                     DNTrademark.com,LLC.(DNTrademark.com)is committed to protecting your privacy.We have prepared this Privacy Policy to describe to you 
-                    our practices regarding the Personal Data(as defined below)we collect from users of our website,located at DNTrademark.com(the"Site")and online service("Service").
+                    our practices regarding the Personal Data(as defined below)we collect from users of our website,located at DNTrademark.com(the&quot;Site&quot;)and online service(&quot;Service&quot;).
                 </p>
                 <h2>Privacy Statement Overview</h2>
                 <p>
@@ -33,15 +33,15 @@ const PrivacyPolicyText = () => {
                     and manage Your Personal Data and informs You of Your rights with respect the privacy practices associated with the,use,and disclosure of Personal Data through the Site and Service.DNTrademark.com may 
                     provide additional notices through the Site or Service in addition to these practices or provide You additional choices about how DNTrademark.com may process Your Personal Data.
                     
-                    If You have any questions about this Privacy Notice or Privacy Policy("Privacy Statement"),please contact us at support@CONTRIB.com.
+                    If You have any questions about this Privacy Notice or Privacy Policy(&quot;Privacy Statement&quot;),please contact us at support@CONTRIB.com.
                 </p>
                 <h2>Privacy Notice</h2>
-                <p>This Privacy Notice describes DNTrademark.com"s collection,use,and 
+                <p>This Privacy Notice describes DNTrademark.com&quot;s collection,use,and 
                 disclosure of the information You provide to Us through Your use of the Site or Service,as well as the rights You have with respect to Your Personal Data.For any questions regarding this Privacy Notice 
                 please contact Us at support@CONTRIB.com.
                 </p>
                 <h2>I.What Information Do We Collect And How Do We Use It?</h2>
-                <p>This Privacy Notice describes DNTrademark.com"s collection,use,and disclosure of the information You provide to Us through Your use of the Site or Service,as well as the rights You have with respect to Your Personal Data.For any questions regarding this Privacy Notice please contact Us     at 
+                <p>This Privacy Notice describes DNTrademark.com&quot;s collection,use,and disclosure of the information You provide to Us through Your use of the Site or Service,as well as the rights You have with respect to Your Personal Data.For any questions regarding this Privacy Notice please contact Us     at 
                 support@CONTRIB.com.</p>
                 <p>
                     <b>Information We collect from You.</b>
@@ -62,14 +62,14 @@ const PrivacyPolicyText = () => {
     Information</h2><p>We may share Your Personal Data with third parties as follows:</p><p><b>Service Providers.</b></p><p>We may share Your Personal Information with 
     third parties,such as vendors and service providers who provide assistance with billing,payment processing,marketing,data analytics support and service associated with the Site or Service.</p><p 
    ><b>Business Partners.</b></p><p>We may share Your Personal Data with Our channel partners to fulfill obligations and requests,to deliver support,and to provide users and Our 
-    customer"s users with information about DNTrademark.com.DNTrademark.com does not control how a business partner may use Your Personal Data.Our business partners are responsible for managing the use of Personal 
+    customer&quot;s users with information about DNTrademark.com.DNTrademark.com does not control how a business partner may use Your Personal Data.Our business partners are responsible for managing the use of Personal 
     Data collected in these circumstances.</p><p><b>Compliance with laws and for other legitimate business purposes.</b></p><p>We may share Your Personal Data when We believe 
     disclosure is necessary or required by law,regulation,to protect users,the integrity of the Site or Service and to defend or exercise Our legal rights.We may also disclose Your Personal Data when it may 
     be 
     necessary for other legitimate purposes as reasonably determined by DNTrademark.com.</p><h2>III.International Transfers of Information</h2><p>Information,including information collected in the 
-    European Economic Area("EEA")may be transferred,stored and processed by Us and Our services providers in the United States and other countries whose data protection laws may be different than the laws of 
+    European Economic Area(&quot;EEA&quot;)may be transferred,stored and processed by Us and Our services providers in the United States and other countries whose data protection laws may be different than the laws of 
     Your country.We will protect Your Personal Data in accordance with this Privacy Notice wherever it is processed and take appropriate steps to protect the information in accordance with applicable 
-    laws.These steps include obligations to both DNTrademark.com and You and available on DNTrademark.com.You may also request an executable version of DNTrademark.com"s Data Processing Agreement by contacting 
+    laws.These steps include obligations to both DNTrademark.com and You and available on DNTrademark.com.You may also request an executable version of DNTrademark.com&quot;s Data Processing Agreement by contacting 
     support@CONTRIB.com.</p><h2>IV.Information Security and Confidentiality</h2><p>DNTrademark.com maintains(and requires its subcontractors and service providers to maintain)appropriate 
     organizational and technical measures designed to protect the security and confidentiality of any information We process.However,no organizational or technical measures are 100%secure so You should take 
     care when disclosing information online and act reasonably to protect Yourself online.</p><h2>V.Privacy Rights</h2><p>You may modify the information You have provided to DNTrademark.com at any 
@@ -90,7 +90,7 @@ const PrivacyPolicyText = () => {
     frequently 
     to understand how DNTrademark.com is protecting Your Personal Data.</p><p><b>Data Protection Officer</b></p><p>DNTrademark.com has appointed a Data Protection Officer to ensure 
     continued commitment to privacy and security practices.For further information please contact Us at:support@CONTRIB.com</p><h2>Privacy Policy</h2><p>This Privacy Policy describes in further 
-    detail DNTrademark.com"s collection,processing,and treatment of Your information,as well as the rights You have with respect to such information.This Privacy Policy will provide You with further technical 
+    detail DNTrademark.com&quot;s collection,processing,and treatment of Your information,as well as the rights You have with respect to such information.This Privacy Policy will provide You with further technical 
     information regarding the processing of Your Personal Data described in the Privacy Notice.If You have any questions or concerns or complaints about this Privacy Policy or Our data collection or 
     processing 
     practices,or if You want to report any security violations to us,please contact Us at:support@CONTRIB.com.</p><h2>I.User Consent</h2><p>By submitting Personal Data through Our Site or 
@@ -102,66 +102,66 @@ const PrivacyPolicyText = () => {
     Data,You acknowledge and agree that Your Personal Data may be processed for the purposes identified in the Privacy Policy.In addition,Your Personal Data may be processed in the country in which it was 
     collected and in other countries,including the United States,where laws regarding processing of Personal Data may be less stringent than the laws in Your country.By providing your data,You consent to 
     such 
-    transfer.For further information please consult Our Privacy Notice.</p><h2>IV.Types Of Data We Collect</h2><p>"Personal Data"means data that allows someone to identify or contact 
-    You,including,for example,Your name,address,telephone number,e-mail address,as well as any other non-public information about You that is associated with or linked to any of the foregoing data."Anonymous 
-    Data"means data that is not associated with or linked to Your Personal Data;Anonymous Data does not,by itself,permit the identification of individual persons.We collect Personal Data and Anonymous 
+    transfer.For further information please consult Our Privacy Notice.</p><h2>IV.Types Of Data We Collect</h2><p>&quot;Personal Data&quot;means data that allows someone to identify or contact 
+    You,including,for example,Your name,address,telephone number,e-mail address,as well as any other non-public information about You that is associated with or linked to any of the foregoing data.&quot;Anonymous 
+    Data&quot;means data that is not associated with or linked to Your Personal Data;Anonymous Data does not,by itself,permit the identification of individual persons.We collect Personal Data and Anonymous 
     Data,as 
     described below.</p><h2>V.Information You Provide To Us</h2><p>We may collect Personal Data from You,such as Your first and last name,location,phone number,gender,e-mail and mailing 
-    addresses,professional title,company name,employment history,education history,personal summary,and password when You create an account to log in to Our network("Account").We retain information on Your 
+    addresses,professional title,company name,employment history,education history,personal summary,and password when You create an account to log in to Our network(&quot;Account&quot;).We retain information on Your 
     behalf,such as files and messages that You store using Your Account.</p><p>If You provide Us feedback or contact us via e-mail,We will collect Your name and e-mail address,as well as any 
     other 
     content included in the e-mail,in order to send You a reply.</p><p>When You post content(text,images,photographs,messages,comments or any other kind of content that is not Your e-mail 
     address)on Our Site,the information contained in Your posting will be stored on Our servers and other users will be able to see it,along with Your profile photo and any other information that You choose 
     to 
-    make public on Your public profile page("Profile").The information that You provide in Your Profile will be visible to others,including anonymous visitors who are not users of Our Service.</p><p 
+    make public on Your public profile page(&quot;Profile&quot;).The information that You provide in Your Profile will be visible to others,including anonymous visitors who are not users of Our Service.</p><p 
    >When You post messages on the message boards of Our Site,the information contained in Your posting will be stored on Our servers and other users will be able to see it.When You participate 
     in 
     one of Our surveys,We may collect additional profile information.We also collect other types of Personal Data that You provide to Us voluntarily,such as Your operating system and version,product 
     registration number,and other requested information if You contact Us via e-mail regarding support for the Site or Service.We may also collect Personal Data at other points on Our Site and Service that 
     state that Personal Data is being collected.</p><h2>VI.Information You Provide From Facebook And Other Social Networking Sites</h2><p>If You are not currently registered as a user the 
-    Service,and You click on"Sign In"using Facebook,Google,LinkedIn,GitHub,Angellist,or another SNS that We support,You will first be asked to enter Your SNS credentials and then be given the option to 
+    Service,and You click on&quot;Sign In&quot;using Facebook,Google,LinkedIn,GitHub,Angellist,or another SNS that We support,You will first be asked to enter Your SNS credentials and then be given the option to 
     register for the Service.In this case,We may receive information from that SNS to make it easier for You to create an Account on the Site.Any information that We collect from Your SNS account may depend 
     on 
     the privacy settings You have with that SNS,so please consult the SNS privacy and data practices.</p><p><b>(a)Information Collected Via Technology</b></p><p>Information 
     Collected 
     by Our Servers.To make Our Site and Service more useful to You,Our servers(which may be hosted by a third party service provider)collect information from You,including Your browser type,operating 
-    system,Internet Protocol("IP")address(a number that is automatically assigned to Your computer when You use the Internet,which may vary from session to session),domain name,and/or a date/time stamp for 
+    system,Internet Protocol(&quot;IP&quot;)address(a number that is automatically assigned to Your computer when You use the Internet,which may vary from session to session),domain name,and/or a date/time stamp for 
     Your visit.Log Files.As is true of most websites,We gather certain information automatically and store it in log files.This information includes IP addresses,browser type,Internet service 
-    provider("ISP"),referring/exit pages,operating system,date/time stamp,and clickstream data.We use this information to analyze trends,administer the Site,track users" movements around the Site, gather 
-    demographic information about Our user base as a whole, and better tailor Our Site and Service to Our users"needs.For example,some of the information may be collected so that when You visit the Site or 
+    provider(&quot;ISP&quot;),referring/exit pages,operating system,date/time stamp,and clickstream data.We use this information to analyze trends,administer the Site,track users&quot; movements around the Site, gather 
+    demographic information about Our user base as a whole, and better tailor Our Site and Service to Our users&quot;needs.For example,some of the information may be collected so that when You visit the Site or 
     use 
     Our Service again,it will recognize You and the information could then be used to serve advertisements and other information appropriate to Your interests.Except as noted in this Privacy Policy,We do not 
-    link this automatically-collected data to Personal Data.Cookies.Like many online services,We use cookies to collect information."Cookies"are small pieces of information that a website sends to Your 
-    computer"s hard drive while You are viewing the website. We may use both session Cookies (which expire once You close Your web browser) and persistent Cookies (which stay on Your computer until You 
+    link this automatically-collected data to Personal Data.Cookies.Like many online services,We use cookies to collect information.&quot;Cookies&quot;are small pieces of information that a website sends to Your 
+    computer&quot;s hard drive while You are viewing the website. We may use both session Cookies (which expire once You close Your web browser) and persistent Cookies (which stay on Your computer until You 
     delete 
     them) to provide You with a more personal and interactive user experience. This type of information is collected to make Our Site and Service more useful to You and to tailor the experience with Us to 
     meet 
-    Your special interests and needs. Pixel Tags. In addition, We use "Pixel Tags" (also referred to as clear Gifs, Web beacons, or Web bugs). Pixel Tags are tiny graphic images with a unique identifier, 
-    similar in function to cookies, that are used to track online movements of Web users. In contrast to Cookies, which are stored on a user"s computer hard drive,Pixel Tags are embedded invisibly in Web 
+    Your special interests and needs. Pixel Tags. In addition, We use &quot;Pixel Tags&quot; (also referred to as clear Gifs, Web beacons, or Web bugs). Pixel Tags are tiny graphic images with a unique identifier, 
+    similar in function to cookies, that are used to track online movements of Web users. In contrast to Cookies, which are stored on a user&quot;s computer hard drive,Pixel Tags are embedded invisibly in Web 
     pages.Pixel Tags also allow Us to send e-mail messages in a format users can read,and they tell us whether e-mails have been opened to ensure that We are sending only messages that are of interest to Our 
-    users.We may use this information to reduce or eliminate messages sent to a User.We do not tie the information gathered by Pixel Tags to Our users" Personal Data. Flash LSOs. When We post videos, third 
-    parties may use local shared objects, known as "Flash Cookies," to store Your preferences for volume control or to personalize certain video features. Flash Cookies are different from browser Cookies 
+    users.We may use this information to reduce or eliminate messages sent to a User.We do not tie the information gathered by Pixel Tags to Our users&quot; Personal Data. Flash LSOs. When We post videos, third 
+    parties may use local shared objects, known as &quot;Flash Cookies,&quot; to store Your preferences for volume control or to personalize certain video features. Flash Cookies are different from browser Cookies 
     because of the amount and type of data and how the data is stored. Cookie management tools provided by Your browser will not remove Flash Cookies. To learn how to manage privacy and storage settings for 
     Flash Cookies, click here: http://www.macromedia.com/support/documentation/en/flashplayer/help/settings_manager07.html. Google Analytics. We use Google Analytics to help analyze how users use the Site. 
     Google Analytics uses Cookies to collect information such as how often users visit the Site and use Services, what pages they visit, and what other sites they used prior to coming to Our Site. We use the 
     information We get from Google Analytics only to improve Our Site and Service. Google Analytics collects only the IP address assigned to You on the date You visit the Site, rather than Your name or other 
     personally identifying information. We do not combine the information generated through the use of Google Analytics with Your Personal Data. Although Google Analytics plants a persistent Cookie on Your 
     web 
-    browser to identify You as a unique user the next time You visit the Site and use Services, the Cookie cannot be used by anyone but Google. Google"s ability to use and share information collected by 
+    browser to identify You as a unique user the next time You visit the Site and use Services, the Cookie cannot be used by anyone but Google. Google&quot;s ability to use and share information collected by 
     Google 
     Analytics about Your visits to the Site and use of Services is restricted by the Google Analytics Terms of Use and the Google Privacy Policy.</p><p><b>(b)Information Collected From You About 
-    Others</b></p><p>If You decide to invite a third party to create an Account,We will collect Your and the third party"s names and e-mail addresses in order to send an e-mail and follow up 
+    Others</b></p><p>If You decide to invite a third party to create an Account,We will collect Your and the third party&quot;s names and e-mail addresses in order to send an e-mail and follow up 
     with 
     the third party. We may maintain this information indefinitely in Our database and may also use this information to help us establish networks of contacts, document relationships, facilitate referrals, 
     and 
     improve Our Services. We may also use this information to show You and other users that You may know each other or have shared contacts. We rely upon You to obtain whatever consents from the third party 
-    that may be required by law to allow us to access and upload the third party"s names and e-mail addresses as required above.You or the third party may contact Us at support@CONTRIB.com to request the 
+    that may be required by law to allow us to access and upload the third party&quot;s names and e-mail addresses as required above.You or the third party may contact Us at support@CONTRIB.com to request the 
     removal of this information from Our database.The e-mail that is sent to Your friends will come from Your e-mail address so that Your friends know that You want to invite to Our Site and Service.</p><p 
    ><b>(c)Information Collected From Address Book and Contact Importing</b></p><p>You may use Our address book and contacts importer to upload Your contacts from other services into 
-    DNTrademark.com.When You import Your contacts,We may indefinitely store the contact information in Our database,including Your contacts'names,e-mails,phone numbers,locations,and relationships to You,subject 
+    DNTrademark.com.When You import Your contacts,We may indefinitely store the contact information in Our database,including Your contacts&apos;names,e-mails,phone numbers,locations,and relationships to You,subject 
     to applicable law.We do not store any passwords You provide as part of the contact import process.After We import Your contacts,We will use this information to help Us establish networks of 
     contacts,document relationships,facilitate referrals,and improve Our Site and Service.We may also use this information to show You and other users that You may know each other or have shared contacts.We 
-    rely upon You to obtain whatever consents from the relevant third parties that may be required by law to allow Us to access and upload the third parties"names,e-mail addresses,and other contact 
+    rely upon You to obtain whatever consents from the relevant third parties that may be required by law to allow Us to access and upload the third parties&quot;names,e-mail addresses,and other contact 
     information.You or such a third party may contact Us at support@CONTRIB.com to request the removal of this information from Our database.</p><p><b>(d)Information Collected From Third Party 
     Companies</b></p><p>We may receive Personal and/or Anonymous Data about You from companies that provide Our Service by way of a co-branded or private-labeled website,companies that offer 
     their 
@@ -175,7 +175,7 @@ const PrivacyPolicyText = () => {
     requests;make telephone calls to You,from time to time,as a part of secondary fraud protection or to solicit Your feedback;send You calendar invitations;and send newsletters,surveys,offers,and other 
     promotional materials related to the Site or Service and for other marketing purposes of DNTrademark.com.</p><p><b>(b)User Testimonials And Feedback</b></p><p>We often receive 
     testimonials and comments from users who have had positive experiences with Our Service.We occasionally publish such Content.When We publish this Content,We may identify Our Users by their first and last 
-    name and may also indicate their home city.We obtain the User"s consent prior to posting his or her name along with the testimonial.We may post user feedback on the Site from time to time.We will share 
+    name and may also indicate their home city.We obtain the User&quot;s consent prior to posting his or her name along with the testimonial.We may post user feedback on the Site from time to time.We will share 
     Your feedback with Your first name and last initial only.If We choose to post Your first and last name along with Your feedback,We will obtain Your consent prior to posting You name with Your feedback.If 
     You make any comments on a blog or forum associated with Services Site,You should be aware that You have no reasonable expectation of privacy and that any Personal Data You submit there can be 
     read,collected,or used by other users of these forums,and could be used to send You unsolicited messages.We are not responsible for the personally identifiable information You choose to submit in these 
@@ -192,13 +192,13 @@ const PrivacyPolicyText = () => {
     other 
     services to DNTrademark.com.These third party service providers are required not to use Your Personal Data other than to provide the services requested by DNTrademark.com.</p><p 
    ><b>(c)Affiliates</b></p><p>We may share some or all of Your Personal Data with Our parent company,subsidiaries,joint ventures,or other companies under a common 
-    control("Affiliates"),in which case We will require Our Affiliates to honor this Privacy Statement.</p><p><b>(d)Corporate Restructuring</b></p><p>We may share some or all of 
+    control(&quot;Affiliates&quot;),in which case We will require Our Affiliates to honor this Privacy Statement.</p><p><b>(d)Corporate Restructuring</b></p><p>We may share some or all of 
     Your 
     Personal Data in connection with or during negotiation of any merger,financing,acquisition or dissolution transaction or proceeding involving sale,transfer,divestiture,or disclosure of all or a portion 
     of 
     Our business or assets.In the event of an insolvency,bankruptcy,or receivership,Personal Data may also be transferred as a business asset.If another company acquires Our company,business,or assets,that 
     company will possess the Personal Data collected by Us and will assume the rights and obligations regarding Your Personal Data as described in this Privacy Policy.</p><p><b>(e)Social 
-    Networking Sites("SNS")</b></p><p>Our Service may enable You to post content to a SNS.If You choose to do this,We will provide information to such SNS in accordance with Your elections.You 
+    Networking Sites(&quot;SNS&quot;)</b></p><p>Our Service may enable You to post content to a SNS.If You choose to do this,We will provide information to such SNS in accordance with Your elections.You 
     acknowledge and agree that You are solely responsible for Your use of those websites and that it is Your responsibility to review the terms of use and privacy policy of the third party provider of such 
     SNS.We will not be responsible or liable for:(i)the availability or accuracy of such SNS;(ii)the content,products or services on or availability of such SNS;or(iii)Your use of any such SNS.</p><p 
    ><b>(f)Public Profile</b></p><p>Certain portions of the information You provide to us may also be displayed in Your Profile.As an essential element of the Service,most of the 
@@ -219,13 +219,13 @@ const PrivacyPolicyText = () => {
     third 
     parties or their products,content or websites.</p><h2>X Your Choices Regarding Information</h2><p>You have several choices regarding the use of information on Our Service:</p><p 
    ><b>(a)Email Communications</b></p><p>We will periodically send You free newsletters and e-mails that directly promote the use of Our Site or Service.When You receive newsletters 
-    or promotional communications from us,You may indicate a preference to stop receiving further communications from us and You will have the opportunity to"opt-out"by following the unsubscribe instructions 
+    or promotional communications from us,You may indicate a preference to stop receiving further communications from us and You will have the opportunity to&quot;opt-out&quot;by following the unsubscribe instructions 
     provided in the e-mail You receive or by contacting us directly(please see contact information below).Despite Your indicated e-mail preferences,We may send You Service related communications,including 
     notices of any updates to Our Terms of Use or Privacy Policy.</p><p><b>(b)Cookies</b></p><p>If You decide at any time that You no longer wish to accept Cookies from Our Site or 
     Service for any of the purposes described above,then You can instruct Your browser,by changing its settings,to stop accepting Cookies or to prompt You before accepting a Cookie from the websites You 
-    visit.Consult Your browser"s technical information.If You do not accept Cookies,however,You may not be able to use all portions of the Site or all functionality of the Service.If You have any questions 
+    visit.Consult Your browser&quot;s technical information.If You do not accept Cookies,however,You may not be able to use all portions of the Site or all functionality of the Service.If You have any questions 
     about how to disable or modify Cookies,please let us know at the contact information provided below.</p><p><b>(c)De-linking SNS</b></p><p>If You decide at any time that You no 
-    longer wish to have Your SNS account(e.g.,Facebook)linked to Your Account,then You may de-link the SNS account in the"preferences"section in Your account settings.You may also manage the sharing of 
+    longer wish to have Your SNS account(e.g.,Facebook)linked to Your Account,then You may de-link the SNS account in the&quot;preferences&quot;section in Your account settings.You may also manage the sharing of 
     certain 
     Personal Data with us when You connect with us through an SNS,such as through Facebook Connect.Please refer to the privacy settings of the SNS to determine how You may adjust Our permissions and manage 
     the 

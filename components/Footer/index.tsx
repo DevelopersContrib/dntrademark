@@ -49,18 +49,10 @@ const Footer = () => {
                 </a>
 
                 <p className="mt-5 mb-10">
-                is a SaaS platform designed to provide an efficient and user-friendly way to check and monitor domain names against global trademark databases and use DNTrademark data to automate preventive and defensive actions against your digital assets.
+                is a SaaS platform designed to provide an efficient and user-friendly way to 
+                check and monitor domain names against global trademark databases and use DNTrademark 
+                data to automate preventive and defensive actions against your digital assets.
                 </p>
-
-                <p className="uppercase tracking-[5px] text-sectiontitle mb-1.5">
-                  contact
-                </p>
-                <a
-                  href="mailto:support@dntrademark.com"
-                  className="text-black dark:text-white font-medium text-itemtitle"
-                >
-                  support@dntrademark.com
-                </a>
               </motion.div>
 
               <div className="w-full lg:w-2/3 xl:w-7/12 flex flex-col md:flex-row md:justify-between gap-8 md:gap-0">
@@ -83,7 +75,7 @@ const Footer = () => {
                   className="animate_top"
                 >
                   <h4 className="font-medium text-black dark:text-white text-itemtitle2 mb-9">
-                    Quick Links
+                    About
                   </h4>
 
                   <ul>
@@ -111,20 +103,21 @@ const Footer = () => {
                         Build & Invest
                       </a>
                     </li>
-                    <li>
-                      <a
-                        href="https://domaindirectory.com/servicepage/?domain=dntrademark.com"
-                        className="inline-block hover:text-primary mb-3"
-                      >
-                        Partner
-                      </a>
-                    </li>
+                   
                     <li>
                       <a
                         href="/referral"
                         className="inline-block hover:text-primary mb-3"
                       >
                         Referral Program
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://roadmap.dntrademakrk.com"
+                        className="inline-block hover:text-primary mb-3"
+                      >
+                        Roadmap
                       </a>
                     </li>
                     
@@ -150,7 +143,7 @@ const Footer = () => {
                   className="animate_top"
                 >
                   <h4 className="font-medium text-black dark:text-white text-itemtitle2 mb-9">
-                    Support
+                    Quick Links
                   </h4>
 
                   <ul>
@@ -162,7 +155,14 @@ const Footer = () => {
                         FAQ
                       </a>
                     </li>
-                    
+                    <li>
+                      <a
+                        href="https://domaindirectory.com/servicepage/?domain=dntrademark.com"
+                        className="inline-block hover:text-primary mb-3"
+                      >
+                        Partner
+                      </a>
+                    </li>
                     
                     <li>
                       <a
@@ -178,6 +178,14 @@ const Footer = () => {
                         className="inline-block hover:text-primary mb-3"
                       >
                         Contribute To DNTrademark
+                      </a>
+                    </li>
+                    <li>
+                      <a
+                        href="https://t.me/dntrademark"
+                        className="inline-block hover:text-primary mb-3"
+                      >
+                        Join our TG Channel
                       </a>
                     </li>
                   </ul>
@@ -247,6 +255,11 @@ const Footer = () => {
                 <li>
                   <a href="/termsofservice" className="hover:text-primary">
                     Terms of Service
+                  </a>
+                </li>
+                <li>
+                  <a href="/sitemap.xml" className="hover:text-primary">
+                    Sitemap
                   </a>
                 </li>
               </ul>

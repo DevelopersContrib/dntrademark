@@ -9,9 +9,9 @@ const menuData: Menu[] = [
   },
   {
     id: 2,
-    title: "Features",
+    title: "Roadmap",
     newTab: false,
-    path: "/#features"
+    path: "https://roadmap.dntrademark.com"
   },
   {
     id: 3,
@@ -21,9 +21,9 @@ const menuData: Menu[] = [
   },
   {
     id: 4,
-    title: "Join the Conversation",
+    title: "Blog",
     newTab: false,
-    path: "https://t.me/dntrademark"
+    path: "https://blog.dntrademark.com"
   },
 
   

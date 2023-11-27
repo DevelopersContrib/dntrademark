@@ -24,7 +24,7 @@ const Thanks = () => {
                 🔥 Thank You for Your Interest in DnTrademark Beta Access!
               </h4>
               <h1 className="text-black dark:text-white text-4xl font-bold tracking-tight text-gray-900 sm:text-6xl bg-gradient-to-r from-black to-primary bg-clip-text text-transparent">
-              You're Awesome! 🚀             
+              You&apos;re Awesome! 🚀             
               </h1>
               <div className="blog-details">
                 <p>Thank you for joining the DnTrademark community. Your support means the world to us.</p>
@@ -36,7 +36,7 @@ const Thanks = () => {
                     <a href="/contribute" className="dark:text-white font-bold tracking-tight text-gray-900 bg-gradient-to-r from-primary to-black bg-clip-text text-transparent">
                   #1. Contribute :
                    </a>
-                      If you're excited about what we're building and want to be part of our journey beyond beta access, consider contributing to our mission. Your support helps us innovate faster and better. 🙌
+                      If you&apos;re excited about what we&apos;re building and want to be part of our journey beyond beta access, consider contributing to our mission. Your support helps us innovate faster and better. 🙌
 
                   </p>
                   
@@ -57,11 +57,11 @@ const Thanks = () => {
 
                   <h3>Stay Connected:</h3>
 
-                  <p>Keep an eye on your inbox. We'll be sending you updates on our progress, exciting news, and opportunities to engage further with DnTrademark.</p>
+                  <p>Keep an eye on your inbox. We&apos;ll be sending you updates on our progress, exciting news, and opportunities to engage further with DnTrademark.</p>
 
-                  <p>Questions or ideas? Don't hesitate to reach out to us at [Contact Email]. We love hearing from our community!</p>
+                  <p>Questions or ideas? Don&apos;t hesitate to reach out to us at [Contact Email]. We love hearing from our community!</p>
 
-                  <p>Once again, thank you for being part of our journey. Together, we're shaping the future of domain and trademark management.</p>
+                  <p>Once again, thank you for being part of our journey. Together, we&apos;re shaping the future of domain and trademark management.</p>
 
                   <p>Best Regards,</p>
 

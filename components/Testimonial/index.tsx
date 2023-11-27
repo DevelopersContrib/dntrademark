@@ -91,7 +91,7 @@ const Testimonial = () => {
                   </div>
 
                   <p>
-                  DNTrademark has been a game-changer for us. As a company heavily invested in domain assets, we were constantly worried about potential trademark conflicts. DNTrademark's real-time monitoring and proactive alerts have given us the peace of mind we needed. This platform is a must-have for any serious domain investor.
+                  DNTrademark has been a game-changer for us. As a company heavily invested in domain assets, we were constantly worried about potential trademark conflicts. DNTrademark&apos;s real-time monitoring and proactive alerts have given us the peace of mind we needed. This platform is a must-have for any serious domain investor.
                   </p>
                 </div>
               </SwiperSlide>
@@ -115,7 +115,7 @@ const Testimonial = () => {
                   </div>
 
                   <p>
-                  As a small business owner, I didn't have the resources to navigate the complexities of trademark law. DNTrademark made the process incredibly easy. I can now confidently choose domain names without the fear of legal complications. Thank you, DNTrademark, for protecting my business.
+                  As a small business owner, I didn&apos;t have the resources to navigate the complexities of trademark law. DNTrademark made the process incredibly easy. I can now confidently choose domain names without the fear of legal complications. Thank you, DNTrademark, for protecting my business.
                   </p>
                 </div>
               </SwiperSlide>
@@ -139,7 +139,7 @@ const Testimonial = () => {
                   </div>
 
                   <p>
-                  Managing a large domain portfolio can be challenging, especially when it comes to avoiding trademark conflicts. DNTrademark's bulk upload feature saved me countless hours, and their notifications ensure I'm always in the know. It's a valuable tool in my domain investment strategy.
+                  Managing a large domain portfolio can be challenging, especially when it comes to avoiding trademark conflicts. DNTrademark&apos;s bulk upload feature saved me countless hours, and their notifications ensure I&apos;m always in the know. It&apos;s a valuable tool in my domain investment strategy.
                   </p>
                 </div>
               </SwiperSlide>

@@ -32,7 +32,7 @@ const CTA = () => {
                 Join Us & Protect Your Domain Investments Today
               </h2>
               <p>
-              Safeguard your valuable domain assets with DNTrademark. Don't leave your brands vulnerable to trademark disputes. Act now to ensure your online presence is secure.
+              Safeguard your valuable domain assets with DNTrademark. Dont leave your brands vulnerable to trademark disputes. Act now to ensure your online presence is secure.
               </p>
             </motion.div>
             <motion.div

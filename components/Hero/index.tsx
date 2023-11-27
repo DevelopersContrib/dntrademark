@@ -25,7 +25,7 @@ const Hero = () => {
               </h4>
               <h1 className="text-black dark:text-white text-5xl font-bold tracking-tight text-gray-900 sm:text-8xl bg-gradient-to-r from-black to-primary bg-clip-text text-transparent">
                 
-                Keeping an eye on your valuable URL's             
+                Keeping an eye on your valuable URL&apos;s             
               </h1>
               <h3 className="text-black dark:text-white font-bold tracking-tight text-gray-900 bg-gradient-to-r from-black to-primary bg-clip-text text-transparent">
               Reduce risk of legal complications by ensuring your domains are protected and aware.
