@@ -216,3 +216,6 @@ pre {
 .referral-content--welcome-text {
 	text-align: center;
 }
+.col-roadmap {
+  position: relative;
+}
