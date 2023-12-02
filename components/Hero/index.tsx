@@ -21,7 +21,7 @@ const Hero = () => {
             <div className="md:w-1/2">
               <h4 className="text-black dark:text-white text-lg font-medium mb-4.5">
                 🔥 Protect Your Digital Assets with 
-                Instant Trademark Notifications
+                Instant Trademark Checks & Notifications
               </h4>
               <h1 className="text-black dark:text-white text-5xl font-bold tracking-tight text-gray-900 sm:text-8xl bg-gradient-to-r from-black to-primary bg-clip-text text-transparent">
                 
@@ -41,21 +41,21 @@ const Hero = () => {
               <div className="relative 2xl:-mr-7.5">
                 <Image
                   src="/images/shape/shape-01.png"
-                  alt="shape"
+                  alt="domain trademark"
                   width={46}
                   height={246}
                   className="absolute right bottom-30 z-10 hover:animate-spin"
                 />  
                 <Image
                   src="/images/shape/shape-02.svg"
-                  alt="shape"
+                  alt="trademark databases"
                   width={36.9}
                   height={36.7}
                   className="absolute right-30 bottom-30 z-10 hover:animate-spin"
                 />
                 <Image
                   src="/images/shape/shape-03.svg"
-                  alt="shape"
+                  alt="trademark service"
                   width={21.64}
                   height={21.66}
                   className="absolute -right-2 bottom-25 z-1 hover:animate-spin"

@@ -9,8 +9,8 @@ import CTA from "@/components/CTA";
 import Testimonial from "@/components/Testimonial";
 
 export const metadata: Metadata = {
-  title: "DNTrademark Global Trademark Notification Platform",
-  description: "dntrademark.com is a SaaS platform designed to provide an efficient and user-friendly way to check domain names against global trademark databases.",
+  title: "DNTrademark - Domain Trademark Check & Notification Platform",
+  description: "dntrademark.com is a SaaS platform designed to provide an efficient and user-friendly way to check domain names against trademark databases",
   // other metadata
 };
 
