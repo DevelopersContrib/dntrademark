@@ -50,7 +50,7 @@ const Footer = () => {
 
                 <p className="mt-5 mb-10">
                 is a SaaS platform designed to provide an efficient and user-friendly way to 
-                check and monitor domain names against global trademark databases and use DNTrademark 
+                check and monitor domain names against trademark databases and use DNTrademark 
                 data to automate preventive and defensive actions against your digital assets.
                 </p>
               </motion.div>
