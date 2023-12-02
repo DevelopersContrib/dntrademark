@@ -24,7 +24,7 @@ const nextConfig = {
         headers: securityHeaders.concat([
           {
             key: 'Access-Control-Allow-Origin',
-            value: 'https://contrib.com,https://vnoc.com,https://manage.vnoc.com,https://hubspot.com/*',
+            value: 'https://contrib.com,https://vnoc.com,https://manage.vnoc.com,https://hubspot.com/*,https://embed.tawk.to/*',
           },
           {
             key: 'Access-Control-Allow-Methods',

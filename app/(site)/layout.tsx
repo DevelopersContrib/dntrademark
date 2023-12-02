@@ -46,8 +46,21 @@ export default function RootLayout({
               <ScrollToTop />
           </ThemeProvider>
           </AuthProvider>
-        <script type="text/javascript" id="hs-script-loader" async defer src="//js.hs-scripts.com/42816889.js"></script>
+              <Script id='tawkto' type="text/javascript">
+              {`  
+              var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
+              (function(){
+              var s1=document.createElement("script"),s0=document.getElementsByTagName("script")[0];
+              s1.async=true;
+              s1.src='https://embed.tawk.to/654d1ee0cec6a912820e56c1/1heqk17ih';
+              s1.charset='UTF-8';
+              s1.setAttribute('crossorigin','*');
+              s0.parentNode.insertBefore(s1,s0);
+              })();
+              `}
+              </Script>
 
+      
       </body>
     </html>
   );
