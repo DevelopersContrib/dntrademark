@@ -166,13 +166,13 @@ const About = () => {
             >
               <Image
                 src="/images/about/about-dntrademark3.png"
-                alt="About"
+                alt="domain trademark"
                 className="dark:hidden"
                 fill
               />
               <Image
                 src="/images/about/about-dntrademark3.png"
-                alt="About"
+                alt="trademark databases"
                 className="hidden dark:block"
                 fill
               />

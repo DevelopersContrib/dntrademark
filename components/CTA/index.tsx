@@ -58,7 +58,7 @@ const CTA = () => {
                   width={299}
                   height={299}
                   src="/images/shape/shape-06.png"
-                  alt="Saly"
+                  alt="trademark databases"
                   className="hidden xl:block"
                 />
                 <a
@@ -70,14 +70,14 @@ const CTA = () => {
                     width={20}
                     height={20}
                     src="/images/icon/icon-arrow-dark.svg"
-                    alt="Arrow"
+                    alt="trademark databasesrow"
                     className="dark:hidden"
                   />
                   <Image
                     width={20}
                     height={20}
                     src="/images/icon/icon-arrow-light.svg"
-                    alt="Arrow"
+                    alt="domain trademark"
                     className="hidden dark:block"
                   />
                 </a>
