@@ -1,5 +1,5 @@
 "use client";
-
+import Script from "next/script";
 import Header from "@/components/Header";
 import Footer from "@/components/Footer";
 import Lines from "@/components/Lines";
@@ -19,6 +19,18 @@ export default function RootLayout({
 }) {
   return (
     <html lang="eng">
+                <Script
+          async
+          src="https://www.googletagmanager.com/gtag/js?id=G-5T0LCMF4ZZ"
+        />
+        <Script>
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', 'G-5T0LCMF4ZZ');
+          `}
+        </Script>
       <body className={`dark:bg-black`}>
       <AuthProvider>
           <ThemeProvider
