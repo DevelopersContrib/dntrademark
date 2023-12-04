@@ -12,7 +12,7 @@ export const metadata: Metadata = {
 
 const RoadmapPage = () => {
   return (
-    <div className="pt-40 pb-20 relative">
+    <div className="pt-10 pb-20 relative">
        <VNOC_roadmap />
     </div>
   );
