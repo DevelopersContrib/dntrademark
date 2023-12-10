@@ -32,9 +32,6 @@ const Hero = () => {
               Use DNTrademark.com for monitoring and precise, speedy, automated notifications.
               </h3>
 
-              <div className="mt-10">
-              <a href="https://www.producthunt.com/posts/dntrademark?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-dntrademark" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=428720&theme=light" alt="Dntrademark - Domain&#0032;Trademark&#0032;Notification&#0032;Platform | Product Hunt" /></a>
-              </div>
             </div>
 
             <div className="animate_right md:w-1/2 hidden lg:block">

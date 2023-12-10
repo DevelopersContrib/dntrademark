@@ -53,6 +53,21 @@ const Footer = () => {
                 check and monitor domain names against trademark databases and use DNTrademark 
                 data to automate preventive and defensive actions against your digital assets.
                 </p>
+                
+              <div className="mt-10">
+              <a href="https://realtydao.com/dna/dntrademark.com">
+              <Image
+                  src="/images/logo/buy-dnt-rdao.png"
+                  alt="Buy DNT @ Realtydao"
+                  width={250}
+                  height={50}
+                  className="mb-2 border border-5e628f rounded-2xl relative float-left mr-4"
+                  
+                />
+               
+              </a>  
+              <a href="https://www.producthunt.com/posts/dntrademark?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-dntrademark" target="_blank"><img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=428720&theme=light" alt="Dntrademark - Domain&#0032;Trademark&#0032;Notification&#0032;Platform | Product Hunt" /></a>
+              </div>
               </motion.div>
 
               <div className="w-full lg:w-2/3 xl:w-7/12 flex flex-col md:flex-row md:justify-between gap-8 md:gap-0">
