@@ -3,6 +3,7 @@ import React, {useEffect} from "react";
 import Image from "next/image";
 import { motion } from "framer-motion";
 import HubspotInvestForm from "./form";
+import VNOC_realtydaoscript from "./investscript";
 
 const InvestForm = () => {
    const [hasMounted, setHasMounted] = React.useState(false);
@@ -23,13 +24,13 @@ const InvestForm = () => {
           <div className="-z-1 bottom-[-255px] left-0 w-full h-full">
             <Image
               src="./images/shape/shape-dotted-light.svg"
-              alt="Dotted"
+              alt="early startup"
               className="dark:hidden"
               fill
             />
             <Image
               src="./images/shape/shape-dotted-dark.svg"
-              alt="Dotted"
+              alt="domain"
               className="hidden dark:block"
               fill
             />
@@ -55,7 +56,7 @@ const InvestForm = () => {
               className="animate_top w-full md:w-3/5 lg:w-3/4 shadow-solid-8 rounded-lg bg-white dark:bg-black dark:border dark:border-strokedark p-7.5 xl:p-15"
             >
               <h2 className="text-black dark:text-white text-3xl xl:text-sectiontitle2 font-semibold mb-15">
-                Signup to our Beta Access
+                Invest Early
               </h2>
               <HubspotInvestForm />
           

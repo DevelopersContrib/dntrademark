@@ -13,27 +13,27 @@ const FunFact = () => {
             width={335}
             height={384}
             src="/images/shape/shape-04.png"
-            alt="Man"
+            alt="Domain trademarks"
             className="absolute -top-25 -left-15 lg:left-0 -z-1"
           />
           <Image
             width={132}
             height={132}
             src="/images/shape/shape-05.png"
-            alt="Doodle"
+            alt="Domain trademarks"
             className="absolute bottom-0 right-0 -z-1"
           />
 
           <Image
             fill
             src="/images/shape/shape-dotted-light-02.svg"
-            alt="Dotted"
+            alt="Domain trademarks"
             className="absolute top-0 left-0 -z-1 dark:hidden"
           />
           <Image
             fill
             src="/images/shape/shape-dotted-dark-02.svg"
-            alt="Dotted"
+            alt="Domain trademarks Platform"
             className="absolute top-0 left-0 -z-1 hidden dark:block"
           />
 
@@ -56,12 +56,10 @@ const FunFact = () => {
             className="animate_top mx-auto text-center md:w-4/5 lg:w-2/3 xl:w-1/2 mb-12.5 lg:mb-17.5 px-4 md:px-0"
           >
             <h2 className="font-bold text-black dark:text-white text-3xl xl:text-sectiontitle3 mb-4">
-              Trusted by Global Companies.
+              Trusted by Professional Domainers
             </h2>
             <p className="lg:w-11/12 mx-auto">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In
-              convallis tortor eros. Donec vitae tortor lacus. Phasellus aliquam
-              ante in maximus.
+            In the digital world, protecting your domains from trademark conflicts is paramount. DNTrademark not only alerts you to potential issues but now actively assists in safeguarding your interests. Whether you're managing a vast portfolio or just a few key domains, dntrademark.com is your go-to solution.
             </p>
           </motion.div>
 
@@ -85,9 +83,9 @@ const FunFact = () => {
               className="animate_top text-center"
             >
               <h3 className="font-bold text-black dark:text-white text-3xl xl:text-sectiontitle3 mb-2.5">
-                500K
+                20K
               </h3>
-              <p className="text-lg lg:text-para2">World Wide Clients</p>
+              <p className="text-lg lg:text-para2">Domains Protected</p>
             </motion.div>
             <motion.div
               variants={{
@@ -108,9 +106,9 @@ const FunFact = () => {
               className="animate_top text-center"
             >
               <h3 className="font-bold text-black dark:text-white text-3xl xl:text-sectiontitle3 mb-2.5">
-                1M+
+                1200+
               </h3>
-              <p className="text-lg lg:text-para2">Downloads</p>
+              <p className="text-lg lg:text-para2">Users</p>
             </motion.div>
             <motion.div
               variants={{
@@ -131,9 +129,9 @@ const FunFact = () => {
               className="animate_top text-center"
             >
               <h3 className="font-bold text-black dark:text-white text-3xl xl:text-sectiontitle3 mb-2.5">
-                865
+                385
               </h3>
-              <p className="text-lg lg:text-para2">Winning Award</p>
+              <p className="text-lg lg:text-para2">Protected</p>
             </motion.div>
           </div>
         </div>

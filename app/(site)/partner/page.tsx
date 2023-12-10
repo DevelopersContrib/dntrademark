@@ -3,8 +3,8 @@ import { Metadata } from "next";
 import VNOC_partnerform from "@/components/Forms/partner";
 
 export const metadata: Metadata = {
-  title: "Partner with DN Trademark",
-  description: "Partner with DN Trademark today",
+  title: "Partner with DNTrademark",
+  description: "Partner with DNTrademark today",
   // other metadata
 };
 

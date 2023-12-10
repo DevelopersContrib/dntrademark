@@ -15,16 +15,54 @@ const menuData: Menu[] = [
   },
   {
     id: 3,
-    title: "Join The Team",
+    title: "About",
     newTab: false,
-    path: "https://domaindirectory.com/servicepage/?domain=dntrademark.com"
+    submenu: [
+      {
+        id: 31,
+        title: "About",
+        newTab: false,
+        path: "/about",
+      },
+      {
+        id: 34,
+        title: "Blog",
+        newTab: false,
+        path: "https://blog.dntrademark.com",
+      },
+      {
+        id: 35,
+        title: "Partner",
+        newTab: false,
+        path: "/partner",
+      },
+      {
+        id: 35,
+        title: "FAQ",
+        newTab: false,
+        path: "/faq",
+      },
+      {
+        id: 35.1,
+        title: "Support",
+        newTab: false,
+        path: "/support",
+      },
+      {
+        id: 36,
+        title: "Invest",
+        newTab: false,
+        path: "https://realtydao.com/dna/dntrademark.com",
+      },      
+    ],
   },
   {
-    id: 4,
-    title: "Blog",
+    id: 3,
+    title: "Join The Team",
     newTab: false,
-    path: "https://blog.dntrademark.com"
+    path: "https://www.contrib.com/brand/details/dntrademark.com"
   },
+
 
   
   
