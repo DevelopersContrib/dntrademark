@@ -62,7 +62,7 @@ const CTA = () => {
                   className="hidden xl:block"
                 />
                 <a
-                  href="/betasignup"
+                  href="https://dash.dntrademark.com/auth/signup"
                   className="inline-flex items-center gap-2.5 font-medium text-white dark:text-black bg-black dark:bg-white rounded-full py-3 px-6 hover:opacity-90"
                 >
                   Sign up free
@@ -77,7 +77,7 @@ const CTA = () => {
                     width={20}
                     height={20}
                     src="/images/icon/icon-arrow-light.svg"
-                    alt="domain trademark"
+                    alt="free domain trademark notification"
                     className="hidden dark:block"
                   />
                 </a>

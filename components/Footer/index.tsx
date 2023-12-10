@@ -188,6 +188,11 @@ const Footer = () => {
                         Join our TG Channel
                       </a>
                     </li>
+                    <li>
+                      <a href="https://www.producthunt.com/products/dntrademark/reviews/new" className="inline-block hover:text-primary mb-3">
+                        Review us On ProductHunt
+                      </a>
+                    </li>
                   </ul>
                 </motion.div>
 
