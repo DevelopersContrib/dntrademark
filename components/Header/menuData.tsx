@@ -48,12 +48,7 @@ const menuData: Menu[] = [
         newTab: false,
         path: "/support",
       },
-      {
-        id: 36,
-        title: "Invest",
-        newTab: false,
-        path: "https://realtydao.com/dna/dntrademark.com",
-      },      
+         
     ],
   },
   {
@@ -62,10 +57,13 @@ const menuData: Menu[] = [
     newTab: false,
     path: "https://www.contrib.com/brand/details/dntrademark.com"
   },
+  {
+    id: 4,
+    title: "Buy DNT Tokens",
+    newTab: false,
+    path: "https://realtydao.com/dna/dntrademark.com"
+  }
 
-
-  
-  
 ];
 
 export default menuData;

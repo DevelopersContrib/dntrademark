@@ -79,7 +79,7 @@ const Testimonial = () => {
                       <h4 className="text-black dark:text-white text-metatitle3 mb-1.5">
                         Devid Smith
                       </h4>
-                      <p>Founter @digitalsolutions</p>
+                      <p>Founder @digitalsolutions</p>
                     </div>
                     <Image
                       width={60}
@@ -103,7 +103,7 @@ const Testimonial = () => {
                       <h4 className="text-black dark:text-white text-metatitle3 mb-1.5">
                         Jhon Abraham
                       </h4>
-                      <p>Founter @ichallenge</p>
+                      <p>Founder @ichallenge</p>
                     </div>
                     <Image
                       width={60}

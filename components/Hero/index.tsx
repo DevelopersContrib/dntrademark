@@ -31,6 +31,7 @@ const Hero = () => {
               Reduce risk of legal complications by ensuring your domains are protected and aware.
               Use DNTrademark.com for monitoring and precise, speedy, automated notifications.
               </h3>
+              
 
             </div>
 
