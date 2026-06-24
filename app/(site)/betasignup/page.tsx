@@ -1,19 +1,21 @@
-import React from "react";
-import Betaform from "@/components/Betaform";
 import { Metadata } from "next";
-
+import EmbedShell from "@/components/sections/EmbedShell";
+import DDForm from "@/components/sections/DDForm";
 
 export const metadata: Metadata = {
-  title: "Beta Signup to  DN Trademark",
-  description: "Beta signup options for DN Trademark",
-  // other metadata
+  title: "Join the Beta — DNTrademark",
+  description: "Get early access to DNTrademark domain trademark monitoring.",
 };
 
 const BetaSignupPage = () => {
   return (
-    <div className="pt-40 pb-20">
-      <Betaform />
-    </div>
+    <EmbedShell
+      eyebrow="Early access"
+      title="Join the beta"
+      subtitle="Be first to monitor your domains against the world's trademark registries. Drop your details and we'll get you set up."
+    >
+      <DDForm type="inquire" />
+    </EmbedShell>
   );
 };
 

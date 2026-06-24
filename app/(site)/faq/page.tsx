@@ -1,19 +1,17 @@
-import React from "react";
 import { Metadata } from "next";
-import FAQ from "@/components/FAQ";
-
+import HelpCenterFaq from "@/components/sections/HelpCenterFaq";
 
 export const metadata: Metadata = {
-  title: "FAQ DN Trademark",
-  description: "Questions? Lets break it down one by one. ",
-  // other metadata
+  title: "FAQ — DNTrademark",
+  description:
+    "Answers about domain trademark monitoring, registries, alerts, registration, payments, accounts and USPTO letters of protest.",
 };
 
 const FaqPage = () => {
   return (
-    <div className="pt-40 pb-20">
-      <FAQ />
-    </div> 
+    <div className="pt-16">
+      <HelpCenterFaq />
+    </div>
   );
 };
 

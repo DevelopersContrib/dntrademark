@@ -1,18 +1,21 @@
-import React from "react";
 import { Metadata } from "next";
-import VNOC_partnerform from "@/components/Forms/partner";
+import EmbedShell from "@/components/sections/EmbedShell";
+import DDForm from "@/components/sections/DDForm";
 
 export const metadata: Metadata = {
   title: "Partner with DNTrademark",
-  description: "Partner with DNTrademark today",
-  // other metadata
+  description: "Become a DNTrademark partner.",
 };
 
 const PartnerPage = () => {
   return (
-    <div className="pt-40 pb-20">
-      <VNOC_partnerform />
-    </div>
+    <EmbedShell
+      eyebrow="Partners"
+      title="Partner with DNTrademark"
+      subtitle="Bring trademark monitoring to your registrar, marketplace, or client portfolio. Let's build something together."
+    >
+      <DDForm type="partner" />
+    </EmbedShell>
   );
 };
 

@@ -8,12 +8,6 @@ const menuData: Menu[] = [
     path: "/"
   },
   {
-    id: 2,
-    title: "Roadmap",
-    newTab: false,
-    path: "https://roadmap.dntrademark.com"
-  },
-  {
     id: 3,
     title: "About",
     newTab: false,

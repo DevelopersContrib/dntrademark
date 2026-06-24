@@ -31,7 +31,7 @@ const Footer = () => {
                 viewport={{ once: true }}
                 className="animate_top w-1/2 lg:w-1/4"
               >
-                <a href="index.html" className="relative">
+                <a href="/" className="relative">
                   <Image
                     width={110}
                     height={80}
@@ -96,7 +96,7 @@ const Footer = () => {
                   <ul>
                     <li>
                       <a
-                        href="#"
+                        href="/"
                         className="inline-block hover:text-primary mb-3"
                       >
                         Home
@@ -104,7 +104,7 @@ const Footer = () => {
                     </li>
                     <li>
                       <a
-                        href="#features"
+                        href="/#features"
                         className="inline-block hover:text-primary mb-3"
                       >
                         Value Proposition
@@ -127,15 +127,6 @@ const Footer = () => {
                         Referral Program
                       </a>
                     </li>
-                    <li>
-                      <a
-                        href="https://roadmap.dntrademakrk.com"
-                        className="inline-block hover:text-primary mb-3"
-                      >
-                        Roadmap
-                      </a>
-                    </li>
-                    
                   </ul>
                 </motion.div>
 
@@ -263,11 +254,6 @@ const Footer = () => {
             >
               <ul className="flex items-center gap-8">
                 <li>
-                  <a href="#" className="hover:text-primary">
-                    English
-                  </a>
-                </li>
-                <li>
                   <a href="/privacypolicy" className="hover:text-primary">
                     Privacy Policy
                   </a>
@@ -303,8 +289,21 @@ const Footer = () => {
               viewport={{ once: true }}
               className="animate_top"
             >
-              <p>&copy; 2023 to 2025 DNTrademark. All rights reserved.  <p>DN Trademark is a proud member of Agentdao, produced and built by <a href="https://vnoc.com">VNOC</a>.</p>
-             Built by <a href="http://vnoc.com">VNOC</a>| An <a href="https://ecorp.com">Ecorp Entity</a></p>
+              <p>
+                &copy; {new Date().getFullYear()} DNTrademark. All rights
+                reserved.
+              </p>
+              <p>
+                A proud member of Agentdao. Built by{" "}
+                <a href="https://vnoc.com" className="hover:text-primary">
+                  VNOC
+                </a>{" "}
+                | An{" "}
+                <a href="https://ecorp.com" className="hover:text-primary">
+                  Ecorp Entity
+                </a>
+                .
+              </p>
              
             </motion.div>
 

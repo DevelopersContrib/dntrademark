@@ -1,21 +1,21 @@
-import React from "react";
 import { Metadata } from "next";
-import VNOC_roadmap from '../../../components/Forms/roadmap';
-
-
+import EmbedShell from "@/components/sections/EmbedShell";
+import VNOC_roadmap from "@/components/Forms/roadmap";
 
 export const metadata: Metadata = {
-  title: "DNTrademark Roadmap",
-  description: "Check out DNTrademarks Dynamic Roadmap Powered by VNOC",
-  // other metadata
+  title: "Roadmap — DNTrademark",
+  description: "See what's shipping next on the DNTrademark roadmap.",
 };
 
 const RoadmapPage = () => {
   return (
-    <div className="pt-10 pb-20 relative">
-       <h2>Roadmap and Features</h2>
-       <VNOC_roadmap />
-    </div>
+    <EmbedShell
+      eyebrow="What's next"
+      title="Product roadmap"
+      subtitle="See what we're building, vote on what matters to you, and help shape where DNTrademark goes next."
+    >
+      <VNOC_roadmap />
+    </EmbedShell>
   );
 };
 

@@ -37,20 +37,12 @@ const Header = () => {
     >
       <div className="mx-auto max-w-c-1390 px-4 md:px-8 2xl:px-0 lg:flex items-center justify-between relative">
         <div className="w-full lg:w-1/4 flex items-center justify-between">
-          <a href="/">
-            <Image
-              src="/images/logo/logo-dntrademark-onblack.png"
-              alt="DN trademark your domain trademark notification service"
-              width={300}
-              height={80}
-              className="w-full hidden dark:block"
-            />
-            <Image
-              src="/images/logo/logo-dntrademark-onwhite.png"
-              alt="DN trademark your domain trademark notification service"
-              width={300}
-              height={80}
-              className="w-full dark:hidden"
+          <a href="/" className="inline-block">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/images/logo/logo-dntrademark-final.png"
+              alt="DNTrademark"
+              className="h-10 w-auto md:h-12"
             />
           </a>
 
