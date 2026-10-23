@@ -32,6 +32,8 @@ export default function RootLayout({
           `}
         </Script>
       <body className={`dark:bg-black`}>
+        {/* VNOC Analytics: counts real visitors on analytics.vnoc.com */}
+        <script src="https://analytics.vnoc.com/tracker.js" defer />
       <AuthProvider>
           <ThemeProvider
             enableSystem={false}
